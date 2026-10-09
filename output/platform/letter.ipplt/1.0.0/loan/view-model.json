@@ -1,0 +1,66 @@
+{
+  "subject": "แจ้งเลื่อนการพิจารณาใบคำขอเอาประกันชีวิต",
+  "company": {
+    "name": "บริษัท เอฟดับบลิวดี ประกันชีวิต จำกัด (มหาชน)",
+    "headerImagePath": "../assets/pos-zlbnchg/header-banner.png"
+  },
+  "printDate": "2 ตุลาคม 2569",
+  "recipient": {
+    "title": "",
+    "postcode": "",
+    "name": "คุณ ผู้รับตัวอย่าง",
+    "addressLines": [
+      "123 ถนนตัวอย่าง",
+      "แขวงตัวอย่าง",
+      "เขตตัวอย่าง ",
+      "กรุงเทพมหานคร 10000"
+    ]
+  },
+  "barcode": {
+    "value": "IPPLT-DEMO-04",
+    "displayText": "*IPPLT-DEMO-04*"
+  },
+  "flags": {
+    "showAgent": true,
+    "showSingleCode": true,
+    "showMultipleCode": false,
+    "showLoan": true,
+    "showSinglePayment": true,
+    "showMultiplePayments": false,
+    "showPaymentSpacing": true
+  },
+  "singleCode": "NB_CLD1250000",
+  "multipleCode": "",
+  "application": {
+    "number": "APP-DEMO-001",
+    "insured": "คุณ ผู้เอาประกันตัวอย่าง",
+    "plan": "แบบประกันสำหรับการทดสอบ",
+    "loanReference": "LOAN-DEMO-001"
+  },
+  "payment": {
+    "amount": "12,500.00",
+    "detail": "โดยธนาคารตัวอย่างจะนำเงินจำนวนนี้ชำระคืนเงินกู้ตามที่คุณได้แจ้งความประสงค์ไว้",
+    "rows": [
+      {
+        "number": 1,
+        "detail": "คืนเงินเพื่อชำระเงินกู้ตัวอย่าง 12,500.00 บาท"
+      }
+    ]
+  },
+  "agent": {
+    "name": "คุณ ตัวแทนตัวอย่าง",
+    "branchCode": "TEST01",
+    "branchName": "สำนักงานตัวอย่าง"
+  },
+  "phoneNumber": "1351",
+  "footerReference": "IPPLT-DEMO-04",
+  "ruleTrace": {
+    "showAgent": true,
+    "showSingleCode": true,
+    "showMultipleCode": false,
+    "showLoan": true,
+    "showSinglePayment": true,
+    "showMultiplePayments": false,
+    "showPaymentSpacing": true
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "_note": "Synthetic standard platform input v1. Resolved display values; no customer data or inferred upstream calculations.",
+  "schemaVersion": "1.0",
+  "document": {
+    "dateText": "2 ตุลาคม 2569",
+    "reference": "IPPLT-DEMO-01",
+    "barcodeValue": "IPPLT-DEMO-01"
+  },
+  "recipient": {
+    "fullName": "คุณ ผู้รับตัวอย่าง",
+    "address": {
+      "lines": [
+        "123 ถนนตัวอย่าง",
+        "แขวงตัวอย่าง",
+        "เขตตัวอย่าง ",
+        "กรุงเทพมหานคร 10000"
+      ]
+    }
+  },
+  "application": {
+    "number": "APP-DEMO-001",
+    "insuredName": "คุณ ผู้เอาประกันตัวอย่าง",
+    "planName": "แบบประกันสำหรับการทดสอบ",
+    "loanAccountNumber": ""
+  },
+  "agent": {
+    "fullName": "คุณ ตัวแทนตัวอย่าง",
+    "branch": {
+      "code": "TEST01",
+      "name": "สำนักงานตัวอย่าง"
+    }
+  },
+  "refund": {
+    "totalAmount": "12500.00",
+    "paymentCount": 1,
+    "methodCode": "4",
+    "references": {
+      "single": "NB_ILD1250000",
+      "batch": ""
+    },
+    "description": "โดยโอนเงินเข้าบัญชีธนาคารตัวอย่าง เลขที่บัญชี TEST-0001 ภายในวันที่ 9 ตุลาคม 2569",
+    "items": [
+      {
+        "sequence": 1,
+        "methodCode": "4",
+        "description": "คืนเงินเข้าบัญชีธนาคารตัวอย่าง 12,500.00 บาท"
+      }
+    ]
+  },
+  "contact": {
+    "phoneNumber": "1351"
+  }
+}

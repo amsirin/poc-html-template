@@ -1,0 +1,43 @@
+/* DIS baseline coordinates in PDF pt; main copy and closing stay in flow.
+   Left margin 54pt; text top: date 99, address 130, subject 222,
+   policy 249, appreciation 285, agent 329, advice 383, closing 487. */
+.dis-letter {
+  --page-margin-x: 54pt;
+  --address-margin: 8pt 0 33pt;
+  --address-bottom: 0pt;
+  --barcode-left: 164pt;
+  --barcode-top: 44pt;
+  color: #000;
+  line-height: 13.44pt;
+}
+.dis-letter .letter-date {
+  position: relative;
+  margin: 15pt 119pt 18pt 0;
+}
+.dis-letter .text-subject { font-size: 10pt; color: #000; margin: 0 0 13.5pt; }
+.dis-letter .policy-reference { margin: 0 0 23pt; }
+.dis-letter .body-para { margin: 0; text-indent: 36pt; }
+.dis-letter .appreciation { margin-bottom: 16pt; }
+.dis-letter .agent-introduction { margin-bottom: 27pt; }
+.dis-letter .policy-advice { margin-bottom: 33pt; }
+.dis-letter .letter-closing {
+  display: grid;
+  grid-template-columns: 256pt 1fr;
+  column-gap: 22pt;
+  margin-left: 3pt;
+  margin-right: 24pt;
+  break-inside: avoid;
+}
+.dis-letter .app-download {
+  position: relative;
+  box-sizing: border-box;
+  height: 75.6pt;
+  border: 0.3pt solid #777;
+  border-radius: 8pt;
+  padding: 4pt 72pt 5pt 6pt;
+}
+.dis-letter .app-download__heading { font-weight: 700; margin: 0 0 8pt; white-space: nowrap; }
+.dis-letter .app-download__description { font-size: 9pt; line-height: 12.1pt; margin: 0; white-space: nowrap; }
+.dis-letter .app-download__qr { position: absolute; width: 65.64pt; height: 65.64pt; right: 5.8pt; top: 2pt; }
+.dis-letter .company-signoff { text-align: center; padding-top: 15pt; white-space: nowrap; }
+.dis-letter .company-signoff p { margin: 0; }

@@ -1,0 +1,35 @@
+{
+  "template": "letter.ipplt@1.0.0",
+  "mode": "preview",
+  "fixture": "single",
+  "inputSha256": "ad77a8a2c1979f746e9fb57a23cae4dab4c2708b5a8ccf969bc48e160a1c0b42",
+  "dependencyDigest": "bf304e2497a85c280118e5b0327345c5496d0179f2421d1b5ef430521ed49d4b",
+  "nodeVersion": "v24.2.0",
+  "htmlSha256": "84fa9ec546cb24e20252d9a8675d2f2f8a09861c52d2101789cdcfcb0610ec6d",
+  "documentJavaScriptDisabled": true,
+  "decisions": {
+    "showAgent": true,
+    "showSingleCode": false,
+    "showMultipleCode": false,
+    "showLoan": false,
+    "showSinglePayment": true,
+    "showMultiplePayments": false,
+    "showPaymentSpacing": true
+  },
+  "releaseReadiness": {
+    "publishImplemented": false,
+    "localEvidenceReady": false,
+    "blockers": [
+      "Package is not approved",
+      "Matching-input source baseline acceptance is missing",
+      "rulesBusinessApproved is missing",
+      "visualApproved is missing",
+      "operationalApproved is missing",
+      "Upstream refund calculations and description preparation are not supplied.",
+      "Matching-data Exstream baselines are missing for native synthetic inputs.",
+      "Payment method dictionary and printed barcode scan acceptance are not verified."
+    ],
+    "note": "Local readiness report only; authenticated approvals and a production publisher are not implemented."
+  },
+  "pdfSha256": "beec8d40cdd4c94ecb5513606ad137e26bcc9b44b00d02b95741b63e75d1f5a9"
+}

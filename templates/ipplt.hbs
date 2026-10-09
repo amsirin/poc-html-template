@@ -1,0 +1,77 @@
+{{! IPPLT executable example. All business rules run before Handlebars.
+    Inputs are synthetic/resolved values; missing upstream formulas are not inferred.
+    Shared header/barcode/sign-off/footer are PoC composition choices, not DXF parity. }}
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <title>{{subject}}</title>
+  <link rel="stylesheet" href="../styles/brand.css">
+  <link rel="stylesheet" href="../styles/typography.css">
+  <link rel="stylesheet" href="../styles/letter-header.css">
+  <link rel="stylesheet" href="../styles/letter-address.css">
+  <link rel="stylesheet" href="../styles/letter-flow.css">
+  <link rel="stylesheet" href="../styles/ipplt.css">
+</head>
+<body class="letter-flow ipplt-letter">
+  <div class="running-footer">
+    <span>{{footerReference}}</span>
+    <span>ตัวอย่างทดสอบ — ข้อมูลสังเคราะห์</span>
+  </div>
+  <article class="letter-flow__content">
+    {{> page-header}}
+    <p class="letter-date">{{printDate}}</p>
+    {{> address-with-barcode}}
+
+    {{#if flags.showSingleCode}}<p class="payment-code" data-rule="showSingleCode">{{singleCode}}</p>{{/if}}
+    {{#if flags.showMultipleCode}}<p class="payment-code" data-rule="showMultipleCode">{{multipleCode}}</p>{{/if}}
+
+    <h1 class="letter-subject">{{subject}}</h1>
+    <p class="salutation">เรียน {{recipient.name}}</p>
+    <p class="body-para">เอฟดับบลิวดีได้รับใบคำขอเอาประกันชีวิตของคุณเรียบร้อยแล้ว และขอขอบคุณอย่างยิ่งที่ได้มอบความไว้วางใจกับเอฟดับบลิวดี</p>
+
+    <section class="letter-details">
+      <h2 class="letter-heading">ข้อมูลใบคำขอเอาประกันชีวิต</h2>
+      <table>
+        <tbody>
+          <tr><th>เลขที่ใบคำขอ</th><td>{{application.number}}</td></tr>
+          <tr><th>ผู้ขอเอาประกัน</th><td>{{application.insured}}</td></tr>
+          <tr><th>แบบประกัน</th><td>{{application.plan}}</td></tr>
+          {{#if flags.showLoan}}<tr data-rule="showLoan"><th>เลขที่บัญชีเงินกู้</th><td>{{application.loanReference}}</td></tr>{{/if}}
+        </tbody>
+      </table>
+    </section>
+
+    <p class="body-para">จากการพิจารณาใบคำขอเอาประกันชีวิตและเอกสารประกอบ เราไม่สามารถพิจารณารับประกันได้ และขอแจ้งการเลื่อนการพิจารณารับประกันชีวิตออกไป</p>
+
+    {{#if flags.showSinglePayment}}
+    <p class="body-para" data-rule="showSinglePayment">ทั้งนี้ เอฟดับบลิวดีได้ดำเนินการคืนเบี้ยประกันที่คุณได้ชำระไว้ จำนวน {{payment.amount}} บาทแล้ว {{payment.detail}}</p>
+    {{/if}}
+
+    {{#if flags.showMultiplePayments}}
+    <p class="body-para" data-rule="showMultiplePayments">ทั้งนี้ เอฟดับบลิวดีได้ดำเนินการคืนเบี้ยประกันที่คุณได้ชำระไว้ จำนวน {{payment.amount}} บาทแล้ว โดยมีรายละเอียด ดังต่อไปนี้</p>
+    <table class="letter-list" data-rule="showMultiplePayments">
+      <tbody>
+        {{#each payment.rows}}
+        <tr class="payment-row"><td class="row-number">{{number}}.</td><td>{{detail}}</td></tr>
+        {{/each}}
+      </tbody>
+    </table>
+    {{/if}}
+    {{#if flags.showPaymentSpacing}}<div class="payment-spacing" data-rule="showPaymentSpacing"></div>{{/if}}
+
+    <p class="body-para">เอฟดับบลิวดีพร้อมที่จะมอบบริการที่ดีให้กับคุณเสมอ และหวังเป็นอย่างยิ่งว่า เราจะได้มีโอกาสมอบประสบการณ์ที่ดีให้กับคุณในครั้งต่อไป สอบถามรายละเอียดเพิ่มเติม ได้ที่ศูนย์บริการลูกค้าเอฟดับบลิวดี โทร. {{phoneNumber}} เราพร้อมดูแลคุณทุกวัน 08.00 - 20.00 น.</p>
+    <div class="signoff">
+      <p>ขอแสดงความนับถือ</p>
+      <p>สายงานปฏิบัติการ แผนกพิจารณารับประกันภัย</p>
+      <p>เอฟดับบลิวดี ประกันชีวิต</p>
+    </div>
+    {{#if flags.showAgent}}
+    <aside class="agent" data-rule="showAgent">
+      <p>ตัวแทน : {{agent.name}}</p>
+      <p>สาขา : {{agent.branchCode}} / สำนักงานตัวแทน : {{agent.branchName}}</p>
+    </aside>
+    {{/if}}
+  </article>
+</body>
+</html>

@@ -1,0 +1,45 @@
+{
+  "_note": "Synthetic standard platform input v1. Resolved display values; no customer data or inferred upstream calculations.",
+  "schemaVersion": "1.0",
+  "document": {
+    "dateText": "2 ตุลาคม 2569",
+    "reference": "IPPLT-DEMO-03",
+    "barcodeValue": "IPPLT-DEMO-03"
+  },
+  "recipient": {
+    "fullName": "คุณ ผู้รับตัวอย่าง",
+    "address": {
+      "lines": [
+        "123 ถนนตัวอย่าง",
+        "กรุงเทพมหานคร 10000"
+      ]
+    }
+  },
+  "application": {
+    "number": "APP-DEMO-001",
+    "insuredName": "คุณ ผู้เอาประกันตัวอย่าง",
+    "planName": "แบบประกันสำหรับการทดสอบ",
+    "loanAccountNumber": ""
+  },
+  "agent": {
+    "fullName": "",
+    "branch": {
+      "code": "TEST01",
+      "name": "สำนักงานตัวอย่าง"
+    }
+  },
+  "refund": {
+    "totalAmount": "0.00",
+    "paymentCount": 0,
+    "methodCode": "",
+    "references": {
+      "single": "NB_ILD",
+      "batch": ""
+    },
+    "description": "",
+    "items": []
+  },
+  "contact": {
+    "phoneNumber": "1351"
+  }
+}

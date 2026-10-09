@@ -1,0 +1,18 @@
+{
+  "schemaVersion": "ccm.group/1.0",
+  "id": "letter",
+  "title": "Letters",
+  "mode": "compose",
+  "allowedProfiles": [
+    "letter-flow@1.0.0"
+  ],
+  "authoring": "developer-git-pr",
+  "requiredCapabilities": [
+    "address window",
+    "barcode",
+    "conditional paragraphs",
+    "refund/details tables",
+    "continuation pages"
+  ],
+  "implementation": "runnable-ipplt-example"
+}

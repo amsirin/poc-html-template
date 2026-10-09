@@ -1,0 +1,347 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>CCM PoC HTML Template — Visual Review</title>
+<style>
+  :root {
+    --bg: #f5f5f5;
+    --panel: #fff;
+    --line: #ddd;
+    --ink: #1a1a1a;
+    --muted: #666;
+    --good: #2c8a2c;
+    --warn: #b47a00;
+    --bad: #b93a3a;
+    --accent: #E87722;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 24px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    background: var(--bg); color: var(--ink);
+  }
+  h1 { margin: 0 0 8px; font-size: 24px; }
+  h1 .accent { color: var(--accent); }
+  h2 { margin: 32px 0 12px; font-size: 18px; }
+  .subtitle { color: var(--muted); font-size: 13px; margin-bottom: 24px; }
+  .review-note { background: #fff5dc; border-left: 4px solid #b47a00; padding: 12px; font-size: 13px; line-height: 1.6; }
+  .navigation, .preview-links { display: flex; flex-wrap: wrap; gap: 16px; margin: 12px 0 24px; font-size: 13px; }
+  a { color: #8a4600; }
+  .template { scroll-margin-top: 16px; }
+  .legend {
+    display: inline-flex; gap: 16px; align-items: center;
+    padding: 8px 16px; background: var(--panel);
+    border: 1px solid var(--line); border-radius: 6px;
+    font-size: 13px; margin-bottom: 24px;
+  }
+  .swatch { display: inline-block; width: 12px; height: 12px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+  .swatch.good { background: var(--good); }
+  .swatch.warn { background: var(--warn); }
+  .swatch.bad { background: var(--bad); }
+
+  .template {
+    background: var(--panel);
+    border: 1px solid var(--line);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+  .template-header {
+    display: flex; justify-content: space-between; align-items: baseline;
+    margin-bottom: 12px;
+  }
+  .template-id { font-size: 15px; font-weight: 600; font-family: 'SF Mono', Menlo, monospace; }
+  .metrics-grid {
+    display: grid;
+    grid-template-columns: 110px repeat(3, 1fr);
+    gap: 8px 16px; margin: 12px 0;
+    font-size: 13px;
+    max-width: 600px;
+  }
+  .metrics-grid > div { padding: 4px 8px; border-radius: 4px; }
+  .metrics-grid .engine-label { font-weight: 600; color: var(--muted); }
+  .metrics-grid .metric-header { font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--muted); }
+  .metric-cell { font-family: 'SF Mono', Menlo, monospace; text-align: right; }
+  .metric-cell.good { background: rgba(44, 138, 44, 0.1); color: var(--good); }
+  .metric-cell.warn { background: rgba(180, 122, 0, 0.1); color: var(--warn); }
+  .metric-cell.bad  { background: rgba(185, 58, 58, 0.1); color: var(--bad); }
+  .metric-cell.na   { background: transparent; color: var(--muted); }
+
+  .triptychs { display: flex; flex-direction: column; gap: 32px; margin-top: 12px; }
+  .triptych-title { font-size: 13px; color: var(--muted); margin-bottom: 6px; }
+  .triptych {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+  }
+  .pane {
+    background: #fafafa;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 8px;
+    text-align: center;
+    position: relative;
+  }
+  .pane-label {
+    font-size: 12px; color: var(--muted); margin-bottom: 6px;
+    text-transform: uppercase; letter-spacing: 0.5px; font-weight: 600;
+  }
+  .pane img {
+    max-width: 100%; height: auto; display: block; margin: 0 auto;
+    border: 1px solid #ccc; cursor: zoom-in;
+    background: #fff;
+  }
+  .pane.diff .pane-label { color: var(--bad); }
+  .missing { padding: 24px; color: var(--muted); font-size: 13px; }
+
+  .modal {
+    position: fixed; inset: 0; background: rgba(0,0,0,0.85);
+    display: none; align-items: center; justify-content: center;
+    z-index: 100; cursor: zoom-out;
+  }
+  .modal.open { display: flex; }
+  .modal img { max-width: 95vw; max-height: 95vh; box-shadow: 0 4px 40px rgba(0,0,0,0.4); }
+
+  .signoff {
+    display: flex; gap: 8px; margin-top: 16px;
+    padding-top: 12px; border-top: 1px solid var(--line);
+    font-size: 13px; align-items: center;
+  }
+  .signoff button {
+    padding: 6px 12px; border: 1px solid var(--line);
+    background: var(--panel); border-radius: 4px; cursor: pointer;
+    font-size: 13px;
+  }
+  .signoff button.pass { color: var(--good); border-color: var(--good); }
+  .signoff button.fail { color: var(--bad); border-color: var(--bad); }
+  .signoff button.pass.active { background: var(--good); color: white; }
+  .signoff button.fail.active { background: var(--bad); color: white; }
+  .signoff-note { color: var(--muted); font-size: 12px; margin-left: 8px; }
+
+  .empty {
+    padding: 40px; text-align: center; color: var(--muted);
+    background: var(--panel); border: 1px dashed var(--line); border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+  <h1>CCM PoC — <span class="accent">HTML Template</span> Migration Review</h1>
+  <p class="subtitle">Generated 2026-10-03 09:59 · 4 template(s) · Click any image to zoom · Sign-off is stored in this browser's localStorage.</p>
+  <nav class="navigation"><a href="#dis-zlagchg">dis-zlagchg</a><a href="#ipplt-loan-reference">ipplt-loan-reference</a><a href="#ipplt-single-reference">ipplt-single-reference</a><a href="#pos-zlbnchg">pos-zlbnchg</a></nav>
+  <p>IPPLT examples without a matching Exstream baseline — preview only, no similarity score:</p>
+  <div class="preview-links"><a href="file:///Users/amber/Documents/CCM/poc-html-template/output/ipplt/multiple.pdf">Multiple payments (2 rows)</a><a href="file:///Users/amber/Documents/CCM/poc-html-template/output/ipplt/no-refund.pdf">No refund</a><a href="file:///Users/amber/Documents/CCM/poc-html-template/output/ipplt/many-rows.pdf">40 rows / pagination</a></div>
+
+  <div class="legend">
+    <span><span class="swatch good"></span>≥95%</span>
+    <span><span class="swatch warn"></span>85–95%</span>
+    <span><span class="swatch bad"></span>&lt;85%</span>
+  </div>
+
+
+  <div class="template" id="dis-zlagchg">
+    <div class="template-header">
+      <div class="template-id">dis-zlagchg</div>
+    </div>
+    <p class="review-note">Fresh 2026-10-03 barcode correction: shared 62.2 x 25pt profile. Size standardization intentionally changes the barcode appearance versus the original; before/after pixels outside the barcode region are identical. Printed scanner acceptance has not been tested.</p>
+    <div class="preview-links"><a href="file:///Users/amber/Documents/CCM/poc-html-template/baselines/dis-zlagchg.pdf">Open Exstream PDF</a><a href="file:///Users/amber/Documents/CCM/poc-html-template/output/dis-zlagchg-diff/html-rendered.pdf">Open generated PDF</a></div>
+    <div class="metrics-grid">
+      <div></div>
+      <div class="metric-header">Page</div>
+      <div class="metric-header">Content</div>
+      <div class="metric-header">Grid</div>
+      
+    <div class="engine-label">pdfreactor</div>
+    <div class="metric-cell good">97.39%</div>
+    <div class="metric-cell bad">15.84%</div>
+    <div class="metric-cell good">99.49%</div>
+    </div>
+    <div class="triptychs">
+      
+    <div>
+      <div class="triptych-title">pdfreactor · page 1 · content 15.84% · grid 99.49%</div>
+      <div class="triptych">
+        <div class="pane">
+          <div class="pane-label">Baseline (Exstream)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/dis-zlagchg-diff/baseline-1.png" alt="baseline">
+        </div>
+        <div class="pane">
+          <div class="pane-label">Rendered (pdfreactor)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/dis-zlagchg-diff/rendered-1.png" alt="rendered">
+        </div>
+        <div class="pane diff">
+          <div class="pane-label">Diff (red = drift)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/dis-zlagchg-diff/diff-01.png" alt="diff">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="signoff" data-template="dis-zlagchg">
+      <span>Reviewer sign-off:</span>
+      <button class="pass">✓ Pass</button>
+      <button class="fail">✗ Fail</button>
+      <span class="signoff-note">Stored in browser only — for POC review</span>
+    </div>
+  </div>
+
+  <div class="template" id="ipplt-loan-reference">
+    <div class="template-header">
+      <div class="template-id">ipplt-loan-reference</div>
+    </div>
+    <p class="review-note">IPPLT loan example vs Exstream case A04. ข้อมูลสังเคราะห์ต่างจากต้นฉบับ รวมถึงเลขใบคำขอ เลขเงินกู้ และยอดคืนเงิน คะแนนรวมความต่างของข้อมูลและ layout จึงไม่ใช่ผลยืนยัน business rules หรือ template parity. Fresh comparison: 2026-10-03. Shared-CSS follow-up: shared header/address; flow spacing and agent position still differ from reference. Latest barcode correction: shared 62.2 x 25pt profile; visible bar dimensions verified from the PDF raster.</p>
+    <div class="preview-links"><a href="file:///Users/amber/Documents/CCM/PDF/Letter/IPPLT/NB_IPPLT__05451834_MASTER_CCM999A04_2026082400232623.pdf">Open Exstream PDF</a><a href="file:///Users/amber/Documents/CCM/poc-html-template/output/ipplt-loan-reference-diff/html-rendered.pdf">Open generated PDF</a></div>
+    <div class="metrics-grid">
+      <div></div>
+      <div class="metric-header">Page</div>
+      <div class="metric-header">Content</div>
+      <div class="metric-header">Grid</div>
+      
+    <div class="engine-label">pdfreactor</div>
+    <div class="metric-cell good">97.22%</div>
+    <div class="metric-cell bad">4.93%</div>
+    <div class="metric-cell good">95.50%</div>
+    </div>
+    <div class="triptychs">
+      
+    <div>
+      <div class="triptych-title">pdfreactor · page 1 · content 4.93% · grid 95.50%</div>
+      <div class="triptych">
+        <div class="pane">
+          <div class="pane-label">Reference (Exstream; different input data)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/ipplt-loan-reference-diff/baseline-1.png" alt="baseline">
+        </div>
+        <div class="pane">
+          <div class="pane-label">Rendered (pdfreactor)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/ipplt-loan-reference-diff/rendered-1.png" alt="rendered">
+        </div>
+        <div class="pane diff">
+          <div class="pane-label">Diff (red = drift)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/ipplt-loan-reference-diff/diff-01.png" alt="diff">
+        </div>
+      </div>
+    </div>
+    </div>
+    <p class="review-note">Reference comparison only — different input data. Metrics do not establish template parity; Pass/Fail sign-off is unavailable.</p>
+  </div>
+
+  <div class="template" id="ipplt-single-reference">
+    <div class="template-header">
+      <div class="template-id">ipplt-single-reference</div>
+    </div>
+    <p class="review-note">IPPLT single-payment example vs Exstream case A03. ข้อมูลสังเคราะห์ต่างจากต้นฉบับ: ชื่อ ที่อยู่ วันที่ จำนวนเงิน และรายละเอียดการคืนเงิน รวมถึง layout ของ PoC ยังไม่ได้ปรับให้ตรงทั้งหมด คะแนนนี้ใช้สำรวจภาพเท่านั้น ไม่ใช่ผลยืนยันความเหมือนของ template. Fresh comparison: 2026-10-03. Shared-CSS follow-up: shared header/address; flow spacing and agent position still differ from reference. Latest barcode correction: shared 62.2 x 25pt profile; visible bar dimensions verified from the PDF raster.</p>
+    <div class="preview-links"><a href="file:///Users/amber/Documents/CCM/PDF/Letter/IPPLT/NB_IPPLT_12120_06267393_MASTER_CCM999A03_2026082400233598.pdf">Open Exstream PDF</a><a href="file:///Users/amber/Documents/CCM/poc-html-template/output/ipplt-single-reference-diff/html-rendered.pdf">Open generated PDF</a></div>
+    <div class="metrics-grid">
+      <div></div>
+      <div class="metric-header">Page</div>
+      <div class="metric-header">Content</div>
+      <div class="metric-header">Grid</div>
+      
+    <div class="engine-label">pdfreactor</div>
+    <div class="metric-cell good">97.58%</div>
+    <div class="metric-cell bad">5.72%</div>
+    <div class="metric-cell good">96.95%</div>
+    </div>
+    <div class="triptychs">
+      
+    <div>
+      <div class="triptych-title">pdfreactor · page 1 · content 5.72% · grid 96.95%</div>
+      <div class="triptych">
+        <div class="pane">
+          <div class="pane-label">Reference (Exstream; different input data)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/ipplt-single-reference-diff/baseline-1.png" alt="baseline">
+        </div>
+        <div class="pane">
+          <div class="pane-label">Rendered (pdfreactor)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/ipplt-single-reference-diff/rendered-1.png" alt="rendered">
+        </div>
+        <div class="pane diff">
+          <div class="pane-label">Diff (red = drift)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/ipplt-single-reference-diff/diff-01.png" alt="diff">
+        </div>
+      </div>
+    </div>
+    </div>
+    <p class="review-note">Reference comparison only — different input data. Metrics do not establish template parity; Pass/Fail sign-off is unavailable.</p>
+  </div>
+
+  <div class="template" id="pos-zlbnchg">
+    <div class="template-header">
+      <div class="template-id">pos-zlbnchg</div>
+    </div>
+    <p class="review-note">Fresh 2026-10-03 barcode correction: shared 62.2 x 25pt profile. Size standardization intentionally changes the barcode appearance versus the original; before/after pixels outside the barcode region are identical. Printed scanner acceptance has not been tested.</p>
+    <div class="preview-links"><a href="file:///Users/amber/Documents/CCM/poc-html-template/baselines/pos-zlbnchg.pdf">Open Exstream PDF</a><a href="file:///Users/amber/Documents/CCM/poc-html-template/output/pos-zlbnchg-diff/html-rendered.pdf">Open generated PDF</a></div>
+    <div class="metrics-grid">
+      <div></div>
+      <div class="metric-header">Page</div>
+      <div class="metric-header">Content</div>
+      <div class="metric-header">Grid</div>
+      
+    <div class="engine-label">pdfreactor</div>
+    <div class="metric-cell good">97.46%</div>
+    <div class="metric-cell bad">17.39%</div>
+    <div class="metric-cell good">99.39%</div>
+    </div>
+    <div class="triptychs">
+      
+    <div>
+      <div class="triptych-title">pdfreactor · page 1 · content 17.39% · grid 99.39%</div>
+      <div class="triptych">
+        <div class="pane">
+          <div class="pane-label">Baseline (Exstream)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/pos-zlbnchg-diff/baseline-1.png" alt="baseline">
+        </div>
+        <div class="pane">
+          <div class="pane-label">Rendered (pdfreactor)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/pos-zlbnchg-diff/rendered-1.png" alt="rendered">
+        </div>
+        <div class="pane diff">
+          <div class="pane-label">Diff (red = drift)</div>
+          <img src="file:///Users/amber/Documents/CCM/poc-html-template/output/pos-zlbnchg-diff/diff-01.png" alt="diff">
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="signoff" data-template="pos-zlbnchg">
+      <span>Reviewer sign-off:</span>
+      <button class="pass">✓ Pass</button>
+      <button class="fail">✗ Fail</button>
+      <span class="signoff-note">Stored in browser only — for POC review</span>
+    </div>
+  </div>
+
+  <div class="modal" id="modal" onclick="this.classList.remove('open')">
+    <img id="modal-img" src="" alt="">
+  </div>
+
+<script>
+  document.querySelectorAll('.pane img').forEach(img => {
+    img.addEventListener('click', () => {
+      const modal = document.getElementById('modal');
+      document.getElementById('modal-img').src = img.src;
+      modal.classList.add('open');
+    });
+  });
+
+  const KEY_PREFIX = 'ccm-html-signoff:';
+  document.querySelectorAll('.signoff').forEach(el => {
+    const tid = el.dataset.template;
+    const stored = localStorage.getItem(KEY_PREFIX + tid);
+    if (stored === 'pass' || stored === 'fail') {
+      el.querySelector('button.' + stored).classList.add('active');
+    }
+    el.querySelectorAll('button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const val = btn.classList.contains('pass') ? 'pass' : 'fail';
+        el.querySelectorAll('button').forEach(b => b.classList.remove('active'));
+        if (localStorage.getItem(KEY_PREFIX + tid) === val) {
+          localStorage.removeItem(KEY_PREFIX + tid);
+        } else {
+          btn.classList.add('active');
+          localStorage.setItem(KEY_PREFIX + tid, val);
+        }
+      });
+    });
+  });
+</script>
+</body>
+</html>

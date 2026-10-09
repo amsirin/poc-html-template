@@ -1,0 +1,81 @@
+{
+  "_note": "Sample data for POS_ZLBNCHG (แจ้งผลการเปลี่ยนแปลงแก้ไขกรมธรรม์). Values are pseudonymised — matches the shape a real customer JSON would carry. Field names are semantic, not Exstream variable names (see DXF variable mapping in dxf-inspect output).",
+
+  "printDate": "26 กรกฎาคม 2566",
+  "docCode": "CCM999",
+  "pageNumber": 1,
+  "pageTotal": 1,
+
+  "recipient": {
+    "title": "คุณ",
+    "name": "กันตxxxxxณ์ แกxxxxอง",
+    "addressLines": [
+      "10 ซ.xxxxxxหาย 3",
+      "ถนนxxxxxระตู",
+      "อ.ixxxxxอง"
+    ],
+    "postcode": "21000"
+  },
+
+  "barcode": {
+    "value": "CCM999A",
+    "displayText": "*CCM999A*"
+  },
+
+  "subject": "แจ้งผลการเปลี่ยนแปลงแก้ไขกรมธรรม์ประกันภัย",
+
+  "policy": {
+    "number": "CCM999",
+    "planName": "เอฟดับบลิวดี ฟอร์ เซฟวิ่ง 20/10",
+    "insured": {
+      "title": "คุณ",
+      "name": "กันตxxxxxณ์ แกxxxxอง"
+    }
+  },
+
+  "change": {
+    "type": "beneficiary",
+    "beneficiaries": [
+      {
+        "title": "คุณ",
+        "name": "วรxxxxรถ แกxxxxอง",
+        "percentage": 100.00
+      }
+    ],
+    "effectiveDate": "26 กรกฎาคม 2566"
+  },
+
+  "approvalDate": "26 กรกฎาคม 2566",
+
+  "signatures": {
+    "signer": {
+      "imagePath": "../assets/pos-zlbnchg/signer-signature.png",
+      "name": "นางสาวทิพย์วรรณ สุวรรณวัฒนภูมิ",
+      "position": "ผู้รับมอบอำนาจ/พยาน"
+    },
+    "seal": {
+      "imagePath": "../assets/pos-zlbnchg/fwd-seal.png"
+    },
+    "witness": {
+      "imagePath": "../assets/pos-zlbnchg/witness-signature.png",
+      "name": "นางสาวสุนิตรา สุสถาพร",
+      "position": "พยาน"
+    }
+  },
+
+  "contact": {
+    "phoneNumber": "1351",
+    "hours": "08.00 - 20.00 น.",
+    "aiChannelName": "AI",
+    "appName": "FWD Omne"
+  },
+
+  "company": {
+    "headerImagePath": "../assets/pos-zlbnchg/header-banner.png",
+    "name": "บริษัท เอฟดับบลิวดี ประกันชีวิต จำกัด (มหาชน)",
+    "addressLine1": "เลขที่ 6 อาคารโอเอสเสาวเวอร์ ชั้น 4, 22-23 ซอยสุขุมวิท 6",
+    "addressLine2": "แขวงคลองเตย เขตคลองเตย กรุงเทพมหานคร 10110",
+    "contactLine": "ศูนย์บริการลูกค้าเอฟดับบลิวดี โทร. 1351  เลขทะเบียนบริษัท 0107563000304",
+    "website": "fwd.co.th"
+  }
+}

@@ -1,0 +1,67 @@
+/* Font faces — external URLs (not base64 inlined). Same Google Noto Sans Thai
+   UI fallback that poc-translator uses when EXSTREAM_FONT_DIR is not set.
+   Font gap vs Exstream CFF is documented in poc-translator's HANDOFF.md
+   Stage 2 finding memory — this POC accepts the same gap. */
+
+@font-face {
+  font-family: 'Noto Sans Thai UI';
+  src: url('../fonts/NotoSansThai-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Noto Sans Thai UI';
+  src: url('../fonts/NotoSansThai-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Noto Sans Thai UI';
+  src: url('../fonts/NotoSansThai-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Noto Sans Thai UI';
+  src: url('../fonts/NotoSansThai-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'Noto Sans Thai UI';
+  src: url('../fonts/NotoSansThai-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}
+
+/* Text rendering: use optimizeLegibility (poc-translator noted geometricPrecision
+   makes Thai tone marks drift). */
+
+body {
+  font-family: var(--font-thai);
+  font-size: var(--size-body);
+  color: var(--fwd-text);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.3;    /* Exstream baseline uses ~13pt line for 10pt text */
+}
+
+.text-subject {
+  font-size: var(--size-subject);
+  font-weight: 700;
+  color: var(--fwd-orange);
+}
+.text-heading {
+  font-size: var(--size-heading);
+  font-weight: 700;
+  color: var(--fwd-text);
+}
+.text-small { font-size: var(--size-small); }
+.text-muted { color: var(--fwd-text-muted); }
+.text-subtle { color: var(--fwd-text-subtle); }
+.text-brand { color: var(--fwd-orange); }

@@ -1,0 +1,21 @@
+/* Shared letterhead geometry for fixed-page and flow letter families.
+   The 100.6pt banner overlaps its 85pt flow slot; dates must paint above it. */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8pt;
+}
+.page-header__logo img { width: 60pt; height: auto; }
+.page-header--image {
+  display: block;
+  height: 85pt;
+  margin: var(--header-top-margin, calc(var(--page-margin-top) * -1)) calc(var(--page-margin-x) * -1) 0;
+}
+.page-header__banner {
+  position: absolute;
+  top: 0;
+  left: var(--header-left, 0pt);
+  width: 594pt;
+  height: 100.6pt;
+}

@@ -1,0 +1,6 @@
+/* IPPLT differences only. All component/layout selectors live in shared CSS.
+   This profile is selected by the body class; no business rules belong here. */
+.ipplt-letter {
+  --details-label-width: 85pt;
+  --signoff-left: 270pt;
+}

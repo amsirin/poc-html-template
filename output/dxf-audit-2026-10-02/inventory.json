@@ -1,0 +1,1127 @@
+{
+  "date": "2026-10-02",
+  "scope": "DXF/*.dxf; PDF/Letter/**/*.pdf",
+  "note": "Counts are declarations/occurrences, not business-rule coverage. Invalid XML controls removed only in memory for discovery; original inputs unchanged. No display-string/customer values included.",
+  "files": [
+    {
+      "file": "APP_Cube_AppForm.dxf",
+      "sha256": "f763c4c6eac7a1892e07ecdea9c44a2d5fd711400c5a949a75d6c2952931da03",
+      "application": "APP_Cube_AppForm",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 572,
+      "formula_variables": [
+        "S_FN_DQ_Agent",
+        "S_FN_DQ_Part_InsureInfo",
+        "S_FN_DQ_Insure_Name",
+        "S_FN_DQ_InsureAddress_Current",
+        "S_FN_DQ_PersonAddress_Home",
+        "S_FN_DQ_PersonAddress_Work",
+        "S_FN_DQ_InsureAddress_Tel",
+        "S_FN_DQ_InsureAddress_Contact",
+        "S_FN_DQ_InsureAddress_Doc01",
+        "S_FN_DQ_InsureAddress_Doc02",
+        "S_FN_DQ_PersonOccupation_Permanent",
+        "S_FN_DQ_InsureOccupation_Permanent",
+        "S_FN_DQ_PersonOccupation_Other",
+        "S_FN_DQ_Set_RiderRQ",
+        "S_FN_DQ_Product",
+        "S_FN_DQ_Dividend",
+        "S_FN_DQ_Payment",
+        "S_FN_DQ_Part_No5_7_Title",
+        "S_FN_DQ_InsurePayer_Name",
+        "S_FN_DQ_InsurePayerAddress_Current",
+        "S_FN_DQ_InsurePayerAddress_Tel",
+        "S_FN_DQ_InsurePayerOccupation_Permanent",
+        "S_FN_DQ_SetTBText",
+        "S_FN_DQ_Benefit",
+        "S_FN_DQ_ApplyPolicy",
+        "S_FN_DQ_DeclinePolicy_Insure",
+        "S_FN_DQ_Part_No8_10_Title",
+        "S_FN_DQ_Narcotics_Insure",
+        "S_FN_DQ_Alcholic_Insure",
+        "S_FN_DQ_Smoke_Insure",
+        "S_FN_DQ_Part_No11_Title",
+        "S_FN_DQ_Shape_Insure",
+        "S_FN_DQ_Part_No12_Title",
+        "S_FN_DQ_Insure2Year",
+        "S_FN_DQ_Part_InsureFamily_Title",
+        "S_FN_DQ_InsureFamily",
+        "S_FN_DQ_Part_InsureHealth_Title",
+        "S_FN_DQ_Health5Year",
+        "S_FN_DQ_Health5Year_Insure",
+        "S_FN_DQ_HealthOperation",
+        "S_FN_DQ_HealthOperation_Insure",
+        "S_FN_DQ_InitCB",
+        "S_FN_DQ_HealthOperation_CheckBoxList",
+        "S_FN_DQ_SetCBText",
+        "S_FN_DQ_SetCBCheck",
+        "S_FN_DQ_SetCBRemark",
+        "S_FN_DQ_SetCBList",
+        "S_FN_DQ_HealthOperation_CheckboxList_Insure",
+        "S_FN_DQ_HealthOperation_TableList",
+        "S_FN_DQ_HealthOperation_TableList_Insure",
+        "S_FN_DQ_HealthSymptom",
+        "S_FN_DQ_HealthSymptom_Insure",
+        "S_FN_DQ_HealthSymptom_CheckBoxList",
+        "S_FN_DQ_HealthSymptom_CheckboxList_Insure",
+        "S_FN_DQ_HealthSymptom_TableList",
+        "S_FN_DQ_HealthSymptom_TableList_Insure",
+        "S_FN_DQ_HealthCancer",
+        "S_FN_DQ_HealthCancer_Insure",
+        "S_FN_DQ_HealthCancer_CheckBoxList",
+        "S_FN_DQ_HealthCancer_CheckboxList_Insure",
+        "S_FN_DQ_HealthCancer_TableList",
+        "S_FN_DQ_HealthCancer_TableList_Insure",
+        "S_FN_DQ_RQ",
+        "S_FN_DQ_SetListText",
+        "S_FN_DQ_RQ_Detail_Insure",
+        "S_FN_DQ_Part_FATCA_Title",
+        "S_FN_DQ_Part_TAX_Title",
+        "S_FN_DQ_Part_Confirm_Title",
+        "S_FN_DQ_Confirm",
+        "S_FN_DQ_Part_Warning_Title",
+        "S_FN_DQ_Warning",
+        "S_FN_DQ_Part_PayerInfo",
+        "S_FN_DQ_Payer_Name",
+        "S_FN_DQ_PayerAddress_Current",
+        "S_FN_DQ_PayerAddress_Tel",
+        "S_FN_DQ_PayerOccupation_Permanent",
+        "S_FN_DQ_Part_PayerQuestion_Title",
+        "S_FN_DQ_DeclinePolicy_Payer",
+        "S_FN_DQ_Narcotics_Payer",
+        "S_FN_DQ_Alcholic_Payer",
+        "S_FN_DQ_Smoke_Payer",
+        "S_FN_DQ_Shape_Payer",
+        "S_FN_DQ_Part_PayerHealth_Title",
+        "S_FN_DQ_Health5Year_Payer",
+        "S_FN_DQ_HealthOperation_Payer",
+        "S_FN_DQ_HealthOperation_CheckboxList_Payer",
+        "S_FN_DQ_HealthOperation_TableList_Payer",
+        "S_FN_DQ_HealthSymptom_Payer",
+        "S_FN_DQ_HealthSymptom_CheckboxList_Payer",
+        "S_FN_DQ_HealthSymptom_TableList_Payer",
+        "S_FN_DQ_RQ_Detail_Payer",
+        "S_FN_DQ_Base_UL",
+        "S_FN_DQ_Payment_UL",
+        "S_FN_DQ_RQ_Detail_Insure_UL",
+        "S_FN_DQ_Payment_FUR",
+        "S_FN_DQ_coInsure",
+        "S_FN_DQ_DeclinePolicy_Insure_FUR",
+        "S_FN_DQ_Part_No8_10_Title_FUR",
+        "S_FN_DQ_Part_No11_Title_FUR",
+        "S_FN_DQ_Part_No12_Title_FUR",
+        "S_FN_DQ_InsureFamily_FUR",
+        "S_FN_DQ_RQ_Detail_Insure_FUR",
+        "S_FN_DQ_Part_MindStrength_Title",
+        "S_FN_DQ_MindStrength_No01",
+        "S_FN_DQ_MindStrength_No01_CheckboxList",
+        "S_FN_DQ_MindStrength_No02",
+        "S_FN_DQ_MindStrength_No03",
+        "S_FN_DQ_MindStrength_No04",
+        "S_FN_DQ_MindStrength_No05",
+        "S_FN_DQ_MindStrength_No06",
+        "S_FN_DQ_DeclinePolicy_Payer_FUR",
+        "S_FN_DQ_RQ_Detail_Payer_FUR",
+        "S_FN_DQ_RQ_Detail_Insure_UNR"
+      ],
+      "calculation_methods": {
+        "fileonly": 37,
+        "constant": 419,
+        "system": 3,
+        "formula": 113
+      },
+      "multi_valued_variables": 210,
+      "usage_rule_declarations": 9635,
+      "usage_rule_unique_ids": 9635,
+      "usage_rule_nonempty_bodies": 9604,
+      "usage_rule_empty_ids": [
+        "32320",
+        "31501",
+        "31503",
+        "31505",
+        "31513",
+        "31511",
+        "31509",
+        "31507",
+        "31527",
+        "31529",
+        "31539",
+        "31537",
+        "31535",
+        "31533",
+        "31531",
+        "35523",
+        "35519",
+        "18023",
+        "18040",
+        "44656",
+        "44657",
+        "44658",
+        "44659",
+        "44660",
+        "44661",
+        "44662",
+        "44663",
+        "35596",
+        "35602",
+        "35621",
+        "35627"
+      ],
+      "usage_rule_references": 154279,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 1250,
+      "custom_format_occurrences": {},
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DoC_App_Cube_FULL",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Cube_SIO",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Cube_GIO",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Cube_UL",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Cube_PA",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DoC_App_Cube_FUR",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DoC_App_Cube_OPD",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Cube_UNR",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Cube_SIO2",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "Doc_Cube_DQForm_FUW",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "Doc_Cube_DQForm_UL",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "Doc_Cube_DQForm_FUR",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "Doc_Cube_DQForm_UNR",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_Ecommerce_AppForm.dxf",
+      "sha256": "b6eb45b7e02f7a0d134605d505b1ae283336d2abd6e9ba541435dd6fde2d907a",
+      "application": "APP_Ecommerce_AppForm",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 36,
+      "formula_variables": [],
+      "calculation_methods": {
+        "fileonly": 2,
+        "constant": 34
+      },
+      "multi_valued_variables": 29,
+      "usage_rule_declarations": 126,
+      "usage_rule_unique_ids": 126,
+      "usage_rule_nonempty_bodies": 126,
+      "usage_rule_empty_ids": [],
+      "usage_rule_references": 5918,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 63,
+      "custom_format_occurrences": {},
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_App_Ecommerce_Form11",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Ecommerce_ECommerce",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Ecommerce_Form4",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Ecommerce_Form8",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Ecommerce_Form10",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Ecommerce_PA",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_App_Ecommerce_EGIO",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_Ecommerce_SalesProposal_IL_Group1.dxf",
+      "sha256": "2074633f161ac921e484c06953765280a01b5ef554f283d93e5488e27f63b61a",
+      "application": "APP_Ecommerce_SalesProposal_IL_Group1",
+      "strict_xml_error": "not well-formed (invalid token): line 5936, column 239",
+      "invalid_controls": {
+        "U+0004": 5
+      },
+      "variables": 70,
+      "formula_variables": [],
+      "calculation_methods": {
+        "constant": 68,
+        "fileonly": 2
+      },
+      "multi_valued_variables": 17,
+      "usage_rule_declarations": 46,
+      "usage_rule_unique_ids": 46,
+      "usage_rule_nonempty_bodies": 38,
+      "usage_rule_empty_ids": [
+        "81305",
+        "85773",
+        "85336",
+        "87264",
+        "87265",
+        "87266",
+        "87267",
+        "87268"
+      ],
+      "usage_rule_references": 2846,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 12,
+      "custom_format_occurrences": {
+        "###,###,###": 2
+      },
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "TH_DOC_SALESPROPOSAL_E-Save10/5",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "EN_DOC_SALESPROPOSAL_E-Save10/5",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_E-Save10/3",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_Speed_Saving12/3",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "EN_DOC_SALESPROPOSAL_Speed_Saving12/3",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_E-Life",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_E-Life_Plus",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_E-Retire",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_BuddySaving10/10",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_Easy_AllInOne",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_Smart-E-Retire",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_EasySmartReturn15/7",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_MaxSaver15/7",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_PAYMENTS",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_PAYMENTS_SCB",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "EN_DOC_SALESPROPOSAL_PAYMENTS",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_Ecommerce_SalesProposal_IL_Group2.dxf",
+      "sha256": "9c0d4afb2083f4e45cf99d68f9fdba4504183a68e810621396c426941fdb3005",
+      "application": "APP_Ecommerce_SalesProposal_IL_Group2",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 46,
+      "formula_variables": [],
+      "calculation_methods": {
+        "constant": 44,
+        "fileonly": 2
+      },
+      "multi_valued_variables": 10,
+      "usage_rule_declarations": 29,
+      "usage_rule_unique_ids": 29,
+      "usage_rule_nonempty_bodies": 25,
+      "usage_rule_empty_ids": [
+        "81284",
+        "81268",
+        "85773",
+        "85336"
+      ],
+      "usage_rule_references": 2472,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 4,
+      "custom_format_occurrences": {},
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "TH_DOC_SALESPROPOSAL_E-Health_Eco_Mini",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_BIG3",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_E-Cancer",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_E-Health",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_E-Health_Deduct_AddUp",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_E-Heart",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_E-Stoke",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "TH_DOC_SALESPROPOSAL_PAYMENTS",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_IEFNC_FinancialChange.dxf",
+      "sha256": "f847491ab80e8a2b6c75e4943be5126398449f81c04bc00853d0422a80c4dfce",
+      "application": "APP_IEFNC_FinancialChange",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 75,
+      "formula_variables": [],
+      "calculation_methods": {
+        "system": 2,
+        "constant": 69,
+        "fileonly": 4
+      },
+      "multi_valued_variables": 10,
+      "usage_rule_declarations": 41,
+      "usage_rule_unique_ids": 41,
+      "usage_rule_nonempty_bodies": 32,
+      "usage_rule_empty_ids": [
+        "85536",
+        "86669",
+        "85574",
+        "85559",
+        "85561",
+        "85572",
+        "85573",
+        "85567",
+        "8310"
+      ],
+      "usage_rule_references": 240,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 7,
+      "custom_format_occurrences": {},
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_IEFNC_New",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_IEFNC_RiderProvision",
+          "type": "pass-through",
+          "placeholder": "Variable|5701|F_IPACK_Placeholder_RiderProvision"
+        },
+        {
+          "name": "DOC_IEFNC_Receipt",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_IntegralLife_INTUC.dxf",
+      "sha256": "a9fe1f73ae4a41250e53de201c8dc3c0a06f7a6e73017a51b3a5e2819a0d1516",
+      "application": "APP_IntegralLife_INTUC",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 27,
+      "formula_variables": [],
+      "calculation_methods": {
+        "constant": 26,
+        "fileonly": 1
+      },
+      "multi_valued_variables": 3,
+      "usage_rule_declarations": 12,
+      "usage_rule_unique_ids": 12,
+      "usage_rule_nonempty_bodies": 12,
+      "usage_rule_empty_ids": [],
+      "usage_rule_references": 56,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 0,
+      "custom_format_occurrences": {
+        "###,###,###,##0.##": 2
+      },
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_INTUC",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_IntegralLife_IPMRF.dxf",
+      "sha256": "4b11d578f0e18fbdfa8f5886447ed06f6e8607149013c4f0d3e189eb99ad80fb",
+      "application": "APP_IntegralLife_IPMRF",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 28,
+      "formula_variables": [],
+      "calculation_methods": {
+        "constant": 24,
+        "fileonly": 4
+      },
+      "multi_valued_variables": 0,
+      "usage_rule_declarations": 15,
+      "usage_rule_unique_ids": 15,
+      "usage_rule_nonempty_bodies": 13,
+      "usage_rule_empty_ids": [
+        "10363",
+        "10371"
+      ],
+      "usage_rule_references": 113,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 0,
+      "custom_format_occurrences": {
+        "###,###,##0.##": 6
+      },
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_IPMRF_Bank",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_IntegralLife_IPPLT.dxf",
+      "sha256": "781909b71aa5b80d178ce1e4f26e0e08f82a96434a34544cd42a6b252835927e",
+      "application": "APP_IntegralLife_IPPLT",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 26,
+      "formula_variables": [],
+      "calculation_methods": {
+        "constant": 25,
+        "fileonly": 1
+      },
+      "multi_valued_variables": 3,
+      "usage_rule_declarations": 11,
+      "usage_rule_unique_ids": 11,
+      "usage_rule_nonempty_bodies": 11,
+      "usage_rule_empty_ids": [],
+      "usage_rule_references": 57,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 0,
+      "custom_format_occurrences": {
+        "###,###,###,##0.##": 2
+      },
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_IPPLT",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_LA_ZLULMSTM.dxf",
+      "sha256": "633e0cc7c0948087dc8dcbac0c77fdcb6d5efa50fa71e3c6641129454c8087dd",
+      "application": "APP_LA_ZLULMSTM",
+      "strict_xml_error": "not well-formed (invalid token): line 1288, column 236",
+      "invalid_controls": {
+        "U+0004": 1
+      },
+      "variables": 45,
+      "formula_variables": [
+        "U_Report_From_Date",
+        "U_Report_To_Date",
+        "U_Current_Bill_FrequencyDesc"
+      ],
+      "calculation_methods": {
+        "constant": 38,
+        "fileonly": 3,
+        "formula": 3,
+        "system": 1
+      },
+      "multi_valued_variables": 23,
+      "usage_rule_declarations": 15,
+      "usage_rule_unique_ids": 15,
+      "usage_rule_nonempty_bodies": 15,
+      "usage_rule_empty_ids": [],
+      "usage_rule_references": 186,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 4,
+      "custom_format_occurrences": {},
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_ZLULMSTM_P1",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_ZLULMSTM_P2",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_ZLULMSTM_P3",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_LTPOSZLBNCHG001.dxf",
+      "sha256": "99d42f42b8766d8372e1b84f7fa4d1da73cc70a2c98337f02e70cf34063d0ed7",
+      "application": "APP_LTPOSZLBNCHG001",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 27,
+      "formula_variables": [],
+      "calculation_methods": {
+        "constant": 26,
+        "fileonly": 1
+      },
+      "multi_valued_variables": 3,
+      "usage_rule_declarations": 6,
+      "usage_rule_unique_ids": 6,
+      "usage_rule_nonempty_bodies": 6,
+      "usage_rule_empty_ids": [],
+      "usage_rule_references": 65,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 0,
+      "custom_format_occurrences": {},
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_ZLBNCHG",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_LTPOSZLCNCIDC001.dxf",
+      "sha256": "856237c643382dee446301a91afc29d683a55a7c1a69ea9d2212570188354dcf",
+      "application": "APP_LTPOSZLCNCIDC001",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 17,
+      "formula_variables": [],
+      "calculation_methods": {
+        "constant": 16,
+        "fileonly": 1
+      },
+      "multi_valued_variables": 0,
+      "usage_rule_declarations": 4,
+      "usage_rule_unique_ids": 4,
+      "usage_rule_nonempty_bodies": 4,
+      "usage_rule_empty_ids": [],
+      "usage_rule_references": 65,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 0,
+      "custom_format_occurrences": {},
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_ZLCNCIDC",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_LTULFSU001.dxf",
+      "sha256": "8a84dbe781d9dc87d653336d0e515ce9f4ba7a1c5858b8523c56c31ac43d2519",
+      "application": "APP_LTULFSU001",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 43,
+      "formula_variables": [],
+      "calculation_methods": {
+        "system": 2,
+        "constant": 39,
+        "fileonly": 2
+      },
+      "multi_valued_variables": 8,
+      "usage_rule_declarations": 20,
+      "usage_rule_unique_ids": 20,
+      "usage_rule_nonempty_bodies": 20,
+      "usage_rule_empty_ids": [],
+      "usage_rule_references": 244,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 3,
+      "custom_format_occurrences": {
+        "#,###,###,##0.00": 7,
+        "#,###,##0.####; \" \";": 4,
+        "###,###,##0.#### ; \" \";": 1,
+        "#,###,##0.##; \" \";": 2
+      },
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_EMAIL_Content",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_SURRENDER_1",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_SURRENDER_2",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_NON_FN_IENFC.dxf",
+      "sha256": "7aa11a891d9852a18d942d6f0a11b7512defec3641d5cff4bec8f9bae184305d",
+      "application": "APP_NON_FN_IENFC",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 45,
+      "formula_variables": [],
+      "calculation_methods": {
+        "system": 2,
+        "constant": 40,
+        "fileonly": 3
+      },
+      "multi_valued_variables": 3,
+      "usage_rule_declarations": 27,
+      "usage_rule_unique_ids": 27,
+      "usage_rule_nonempty_bodies": 26,
+      "usage_rule_empty_ids": [
+        "9973"
+      ],
+      "usage_rule_references": 145,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 0,
+      "custom_format_occurrences": {},
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_NON_Financial_Change",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    },
+    {
+      "file": "APP_ZLFINCHG.dxf",
+      "sha256": "5ca66f039911c032143c59dd1420b9fa7dbaf30e0518d7f491c504a4aa4215ff",
+      "application": "APP_ZLFINCHG",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 66,
+      "formula_variables": [],
+      "calculation_methods": {
+        "system": 4,
+        "constant": 55,
+        "fileonly": 7
+      },
+      "multi_valued_variables": 15,
+      "usage_rule_declarations": 43,
+      "usage_rule_unique_ids": 43,
+      "usage_rule_nonempty_bodies": 40,
+      "usage_rule_empty_ids": [
+        "82120",
+        "84916",
+        "85754"
+      ],
+      "usage_rule_references": 233,
+      "unresolved_usage_rule_ids": [],
+      "text_rule_elements": 12,
+      "custom_format_occurrences": {
+        "###,###,###.##": 1
+      },
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_ZLFINCHG",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        },
+        {
+          "name": "DOC_ZLFINCHG_RiderProvision_LA",
+          "type": "pass-through",
+          "placeholder": "Variable|2314|F_Placeholder_MainPlanRiderProvisionNewDuplex"
+        }
+      ]
+    },
+    {
+      "file": "LA_ZLPSP.dxf",
+      "sha256": "35b1de40a9250e2873cad728454bdf6c79977296badbaa8a48253b676be28614",
+      "application": "LA_ZLPSP",
+      "strict_xml_error": null,
+      "invalid_controls": {},
+      "variables": 24,
+      "formula_variables": [],
+      "calculation_methods": {
+        "fileonly": 1,
+        "constant": 23
+      },
+      "multi_valued_variables": 3,
+      "usage_rule_declarations": 5,
+      "usage_rule_unique_ids": 5,
+      "usage_rule_nonempty_bodies": 5,
+      "usage_rule_empty_ids": [],
+      "usage_rule_references": 52,
+      "unresolved_usage_rule_ids": [
+        "5163",
+        "5164",
+        "5165",
+        "5166"
+      ],
+      "text_rule_elements": 0,
+      "custom_format_occurrences": {
+        "###,###,###,##0.##": 2
+      },
+      "function_lookup_mapping_element_kinds": {},
+      "documents": [
+        {
+          "name": "DOC_LTULNPP001",
+          "type": "normal",
+          "placeholder": "Variable|0|"
+        }
+      ]
+    }
+  ],
+  "pdf_groups": [
+    {
+      "group": "IEFNC",
+      "samples": [
+        {
+          "title": "APP_IEFNC_FinancialChange",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": true
+        }
+      ]
+    },
+    {
+      "group": "IENFC",
+      "samples": [
+        {
+          "title": "APP_NON_FN_IENFC",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": true
+        }
+      ]
+    },
+    {
+      "group": "INTUC",
+      "samples": [
+        {
+          "title": "APP_IntegralLife_INTUC",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": true
+        }
+      ]
+    },
+    {
+      "group": "IPPLT",
+      "samples": [
+        {
+          "title": "APP_IntegralLife_IPPLT",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "APP_IntegralLife_IPPLT",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "APP_IntegralLife_IPPLT",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "APP_IntegralLife_IPPLT",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": false
+        }
+      ]
+    },
+    {
+      "group": "ZLAGCHG",
+      "samples": [
+        {
+          "title": "APP_ZLAGCHG",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": false
+        }
+      ]
+    },
+    {
+      "group": "ZLBNCHG",
+      "samples": [
+        {
+          "title": "APP_LTPOSZLBNCHG001",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": false
+        }
+      ]
+    },
+    {
+      "group": "ZLCNCIDC",
+      "samples": [
+        {
+          "title": "APP_LTPOSZLCNCIDC001",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": false
+        }
+      ]
+    },
+    {
+      "group": "ZLFINCHG",
+      "samples": [
+        {
+          "title": "APP_ZLFINCHG",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "APP_ZLFINCHG",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "APP_ZLFINCHG",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "APP_ZLFINCHG",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "APP_ZLFINCHG",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "APP_ZLFINCHG",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "APP_ZLFINCHG",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "APP_ZLFINCHG",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "APP_ZLFINCHG",
+          "pages": 12,
+          "exit_code": 0,
+          "has_warning": false
+        },
+        {
+          "title": "APP_ZLFINCHG",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": true
+        }
+      ]
+    },
+    {
+      "group": "ZLFSUR",
+      "samples": [
+        {
+          "title": "APP_LTULFSU001",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": true
+        }
+      ]
+    },
+    {
+      "group": "ZLFSURI",
+      "samples": [
+        {
+          "title": "APP_LTZLFSURI001",
+          "pages": 2,
+          "exit_code": 0,
+          "has_warning": false
+        },
+        {
+          "title": "APP_LTZLFSURI001",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": true
+        }
+      ]
+    },
+    {
+      "group": "ZLPSP",
+      "samples": [
+        {
+          "title": "LA_ZLPSP",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": true
+        },
+        {
+          "title": "LA_ZLPSP",
+          "pages": 1,
+          "exit_code": 0,
+          "has_warning": true
+        }
+      ]
+    },
+    {
+      "group": "ZLULMSTM",
+      "samples": [
+        {
+          "title": "APP_STULKAP001MO_New",
+          "pages": 3,
+          "exit_code": 0,
+          "has_warning": false
+        }
+      ]
+    }
+  ]
+}

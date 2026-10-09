@@ -1,0 +1,30 @@
+{
+  "engine": "pdfreactor",
+  "pdfreactorUrl": "http://localhost:9423",
+  "htmlPath": "/Users/amber/Documents/CCM/poc-html-template/output/dis-zlagchg.html",
+  "pdfPath": "/Users/amber/Documents/CCM/poc-html-template/baselines/dis-zlagchg.pdf",
+  "dpi": 150,
+  "overallPageSimilarity": 97.39,
+  "overallContentSimilarity": 15.84,
+  "overallGridSimilarity": 99.49,
+  "pageCount": 1,
+  "results": [
+    {
+      "page": 1,
+      "pageSimilarity": 97.39,
+      "contentSimilarity": 15.84,
+      "gridSimilarity": 99.49,
+      "numDiffPixels": 56805,
+      "totalPixels": 2176200,
+      "inkBaseline": 101169,
+      "inkRendered": 103283,
+      "inkUnion": 139597,
+      "diffInInkUnion": 117482,
+      "width": 1240,
+      "height": 1755,
+      "baseline": "baseline-1.png",
+      "rendered": "rendered-1.png",
+      "diff": "diff-01.png"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+/* POS_ZLBNCHG: dimensions measured from baselines/pos-zlbnchg.pdf in pt.
+   Main letter content remains in flow; header, barcode, signatures and footer
+   use the baseline's fixed anchors. See MIGRATION.md for sample limitations. */
+@font-face {
+  font-family: 'POS Angsana New';
+  src: url('../fonts/AngsanaNew.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+.page {
+  --fwd-text: #000;
+  --fwd-text-muted: #000;
+  color: #000;
+}
+.page .letter-date {
+  position: relative;
+  margin: 5pt 103pt 18pt 0;
+}
+.page .text-subject { margin: 0 0 8pt; color: #000; }
+.page .body-para { margin: 7pt 0; }
+.page section.policy-details { margin: 10pt 0 12pt; }
+.page section.policy-details .text-heading {
+  margin: 0 0 8pt;
+  padding-left: var(--body-indent);
+}
+.page dl.details {
+  grid-template-columns: 100pt 1fr;
+  row-gap: 5pt;
+  margin: 0 0 8pt;
+}
+.page section.change-details { margin: 16pt 0 8pt; }
+.page section.change-details > p:first-child { margin: 0 0 2pt; }
+.page section.change-details > p:first-child,
+.page section.change-details > p:last-child { padding-left: var(--body-indent); }
+.page section.change-details ul.plain { margin: 2pt 0; }
+.page section.change-details ul.plain > li {
+  display: grid;
+  grid-template-columns: 204pt 1fr;
+  padding-left: 11pt;
+  margin-bottom: 0;
+}
+.page section.change-details > p:last-child { margin-top: 2pt; }
+/* Baseline image boxes: signer 104,576.7 / seal 244,551.3 / witness 380.7,551.3. */
+.page .signature-block {
+  position: absolute;
+  left: var(--page-margin-x);
+  right: var(--page-margin-x);
+  top: 551.3pt;
+  margin: 0;
+  font-family: 'POS Angsana New', serif;
+  font-size: 14pt;
+  line-height: 18.5pt;
+  text-align: center;
+}
+.signature { position: absolute; }
+.signature--signer { left: 16pt; top: 25.4pt; width: 147pt; }
+.signature--seal { left: 181pt; top: 0; width: 93.6pt; }
+.signature--witness { left: 314pt; top: 0; width: 99pt; }
+.signature__image { display: block; margin: 0 auto; }
+.signature--signer .signature__image { width: 100pt; height: 26.9pt; }
+.signature__image--seal { width: 93.6pt; height: 93.5pt; }
+.signature--witness .signature__image { width: 91.8pt; height: 52.3pt; }
+.signature__name { margin: 4pt 0 0; font-weight: 400; }
+.signature__position { margin: 0; }
+.page .contact-info {
+  position: absolute;
+  left: var(--page-margin-x);
+  right: var(--page-margin-x);
+  top: 689pt;
+  margin: 0;
+  font-size: 10pt;
+  line-height: 13.44pt;
+  text-indent: var(--body-indent);
+}
+.page .page-footer {
+  left: 66.6pt;
+  right: 67.2pt;
+  top: 796.5pt;
+  bottom: auto;
+  border: 0;
+  padding: 0;
+  font-size: 10pt;
+  line-height: 13.44pt;
+}

@@ -1,0 +1,124 @@
+                Created with RealObjects PDFreactor(R) Web Service Evaluation Version | https://www.pdfreactor.com
+
+
+
+
+                                                                                     2 ตุลาคม 2569
+
+
+คุณ ผูร้ บ
+         ั ตัวอย่าง
+123 ถนนตัวอย่าง
+แขวงตัวอย่าง
+เขตตัวอย่าง
+กรุงเทพมหานคร 10000                             * I P P L T - D E M O - 0 2 *
+
+
+
+
+                                                           NB_ILD1250000
+
+แจ้งเลื่อนการพิจารณาใบคำาขอเอาประกันชีวต
+                                       ิ
+เรียน คุณ ผูร้ บ
+               ั ตัวอย่าง
+
+       เอฟดับบลิวดีได้รบ
+                       ั ใบคำาขอเอาประกันชีวต
+                                            ิ ของคุณเรียบร้อยแล้ว และขอขอบคุณอย่างยิง
+                                                                                    ่ ที่ได้มอบความไว้วางใจกับ
+เอฟดับบลิวดี
+
+           ข้อมูลใบคำาขอเอาประกันชีวต
+                                    ิ
+
+           เลขที่ใบคำาขอ           APP-DEMO-001
+           ผูข
+             ้ อเอาประกัน          คุณ ผูเ้ อาประกันตัวอย่าง
+           แบบประกัน               แบบประกันสำาหรับการทดสอบ
+
+
+         จากการพิจารณาใบคำาขอเอาประกันชีวต
+                                         ิ และเอกสารประกอบ เราไม่สามารถพิจารณารับประกันได้ และขอแจ้งการ
+เลื่อนการพิจารณารับประกันชีวต
+                            ิ ออกไป
+
+           ทัง
+             ้ นี้ เอฟดับบลิวดีได้ดำาเนินการคืนเบีย
+                                                  ้ ประกันที่คณ
+                                                              ุ ได้ชาำ ระไว้ จำานวน 12,500.00 บาทแล้ว โดยมีรายละเอียด ดัง
+ต่อไปนี้
+
+           1.     คืนเงินเข้าบัญชีธนาคารตัวอย่าง เลขที่บญ
+                                                        ั ชี TEST-0001 จำานวน 5,000.00 บาท
+           2.     คืนเงินเข้าบัตรเครดิตตัวอย่าง หมายเลข TEST-0002 จำานวน 7,500.00 บาท
+
+
+          เอฟดับบลิวดีพร้อมที่จะมอบบริการที่ดีให้กับคุณเสมอ และหวังเป็นอย่างยิง  ่ ว่า เราจะได้มโี อกาสมอบประสบการณ์ที่
+ดีให้กับคุณในครัง้ ต่อไป สอบถามรายละเอียดเพิม่ เติม ได้ที่ศูนย์บริการลูกค้าเอฟดับบลิวดี โทร. 1351 เราพร้อมดูแลคุณทุก
+วัน 08.00 - 20.00 น.
+
+
+                                                                                           ขอแสดงความนับถือ
+                                                                                สายงานปฏิบต
+                                                                                          ั ิการ แผนกพิจารณารับประกันภัย
+                                                                                        เอฟดับบลิวดี ประกันชีวต
+                                                                                                              ิ
+
+
+
+ตัวแทน : คุณ ตัวแทนตัวอย่าง
+สาขา : TEST01 / สำานักงานตัวแทน : สำานักงานตัวอย่าง
+
+
+
+
+IPPLT-DEMO-02                                                                                                         หน้า 1
+ตัวอย่างทดสอบ — ข้อมูลสังเคราะห์
+
+
+                Created with RealObjects PDFreactor(R) Web Service Evaluation Version | https://www.pdfreactor.com
+ Created with RealObjects PDFreactor(R) Web Service Evaluation Version | https://www.pdfreactor.com
+
+
+
+
+Evaluation Version
+This PDF document was created by an evaluation version of RealObjects PDFreactor
+12.7.1 (18291). The evaluation version is fully functional, but includes this information
+page. It must not be used for production purposes. The information page and all other
+evaluation notices must not be removed from the PDF file.
+
+NOTE: Conversions in evaluation mode might be slower and the results might have a
+larger file size than in production mode.
+
+Buy PDFreactor
+To buy a PDFreactor license follow this link:
+
+
+
+                                   Buy PDFreactor online
+
+
+
+
+About PDFreactor
+RealObjects PDFreactor is a powerful formatting processor for converting HTML and
+XML documents into PDF. It uses Cascading Style Sheets (CSS) to define page layout
+and styles. The server-side tool enables a great variety of applications in the fields of
+ERP, eCommerce and Electronic Publishing.
+
+PDFreactor supports HTML5, CSS3 and JavaScript.
+
+It allows you to dynamically generate PDF documents such as invoices, delivery notes
+and shipping documents on-the-fly. PDFreactor allows you to easily add server-based
+PDF generation functionality to your application or service. Since PDFreactor runs on a
+server, the end-user in general does not need any software other than a PDF viewer.
+
+For more information visit www.pdfreactor.com
+
+
+
+
+ Created with RealObjects PDFreactor(R) Web Service Evaluation Version | https://www.pdfreactor.com
+

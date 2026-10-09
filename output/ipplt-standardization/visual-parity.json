@@ -1,0 +1,49 @@
+{
+  "date": "2026-10-03",
+  "all_html_identical_except_rule_labels": true,
+  "document_pages": [
+    {
+      "case": "single",
+      "physical_page": 1,
+      "before_sha256": "a7fddf0eb3ea3765f39544a0916a87f18d57db742b37e76fb28cfb671cd1aaf9",
+      "after_sha256": "a7fddf0eb3ea3765f39544a0916a87f18d57db742b37e76fb28cfb671cd1aaf9",
+      "identical": true
+    },
+    {
+      "case": "multiple",
+      "physical_page": 1,
+      "before_sha256": "c0155b601124d2f268c9a30e3115764b387338986e88217264bb5c23c3fa8588",
+      "after_sha256": "c0155b601124d2f268c9a30e3115764b387338986e88217264bb5c23c3fa8588",
+      "identical": true
+    },
+    {
+      "case": "no-refund",
+      "physical_page": 1,
+      "before_sha256": "68f1436f6fbe78372143bff22f1c10f5e8c43ed29a81dab5ab23b451fc3ee336",
+      "after_sha256": "68f1436f6fbe78372143bff22f1c10f5e8c43ed29a81dab5ab23b451fc3ee336",
+      "identical": true
+    },
+    {
+      "case": "loan",
+      "physical_page": 1,
+      "before_sha256": "ad8b95f1ef69fadf0e1a723e412738238f0994780b99672e4809fdcc39af7419",
+      "after_sha256": "ad8b95f1ef69fadf0e1a723e412738238f0994780b99672e4809fdcc39af7419",
+      "identical": true
+    },
+    {
+      "case": "many-rows",
+      "physical_page": 1,
+      "before_sha256": "9a2bcc43c395a981c47393f934503324e5e3d0bf02a9bccfc527972cfc725261",
+      "after_sha256": "9a2bcc43c395a981c47393f934503324e5e3d0bf02a9bccfc527972cfc725261",
+      "identical": true
+    },
+    {
+      "case": "many-rows",
+      "physical_page": 3,
+      "before_sha256": "a63aacfbb74716e4261bfd39e33c54ef5cab9c434056e690bb48b5d3bf57c7b0",
+      "after_sha256": "a63aacfbb74716e4261bfd39e33c54ef5cab9c434056e690bb48b5d3bf57c7b0",
+      "identical": true
+    }
+  ],
+  "forty_rows_in_order": true
+}

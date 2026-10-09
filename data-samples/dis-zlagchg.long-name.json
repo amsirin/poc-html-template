@@ -1,0 +1,40 @@
+{
+  "_note": "Synthetic variant: long names, extra address line and populated agent phone; no matching Exstream baseline supplied.",
+  "printDate": "26 กุมภาพันธ์ 2569",
+  "subject": "การเปลี่ยนแปลงตัวแทนผู้ให้บริการ",
+  "recipient": {
+    "title": "คุณ",
+    "name": "ผู้รับตัวอย่างสำหรับทดสอบชื่อและนามสกุลที่มีความยาวมากกว่าข้อมูลปกติ",
+    "addressLines": [
+      "อาคารตัวอย่าง ชั้น 12 ห้อง 1201",
+      "123 ถนนตัวอย่าง แขวงตัวอย่าง",
+      "เขตตัวอย่าง จังหวัดตัวอย่าง",
+      "รหัสไปรษณีย์ 10000"
+    ]
+  },
+  "policy": {
+    "number": "TEST12345"
+  },
+  "barcode": {
+    "value": "TEST12345",
+    "displayText": "*TEST12345*"
+  },
+  "agent": {
+    "title": "คุณ",
+    "name": "ตัวแทนตัวอย่างสำหรับทดสอบชื่อและนามสกุลที่มีความยาวมากกว่าข้อมูลปกติ",
+    "phoneNumber": "02-000-0000"
+  },
+  "contact": {
+    "phoneNumber": "1351",
+    "hours": "08.00-20.00 น."
+  },
+  "company": {
+    "headerImagePath": "../assets/dis-zlagchg/header-banner.png",
+    "name": "บริษัท เอฟดับบลิวดี ประกันชีวิต จำกัด (มหาชน)",
+    "signoffName": "บริษัทเอฟดับบลิวดี ประกันชีวิต จำกัด(มหาชน)"
+  },
+  "appDownload": {
+    "name": "FWD Omne",
+    "qrImagePath": "../assets/dis-zlagchg/app-qr.jpg"
+  }
+}

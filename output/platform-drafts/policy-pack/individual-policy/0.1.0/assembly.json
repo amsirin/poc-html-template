@@ -1,0 +1,7 @@
+{
+  "schemaVersion": "ccm.assembly/1.0",
+  "parts": [],
+  "missingRequiredPart": "fail",
+  "numbering": "must-be-specified",
+  "duplex": "must-be-specified"
+}

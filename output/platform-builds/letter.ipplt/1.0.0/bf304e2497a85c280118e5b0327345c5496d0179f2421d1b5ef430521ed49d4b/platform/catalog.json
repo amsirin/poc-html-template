@@ -1,0 +1,116 @@
+{
+  "schemaVersion": "ccm.catalog/1.0",
+  "groups": {
+    "letter": "platform/groups/letter.json",
+    "si": "platform/groups/si.json",
+    "application-form": "platform/groups/application-form.json",
+    "policy-pack": "platform/groups/policy-pack.json"
+  },
+  "templates": {
+    "letter.ipplt@1.0.0": "platform/templates/letter/ipplt/1.0.0/manifest.json"
+  },
+  "entries": {
+    "handlebars-pdfreactor@1.0.0": {
+      "kind": "renderer",
+      "files": [
+        "src/render.js",
+        "src/html-to-pdf.js",
+        "package.json",
+        "package-lock.json"
+      ],
+      "dependsOn": []
+    },
+    "ipplt-input@1.0.0": {
+      "kind": "contract",
+      "module": "src/ipplt/contract.js",
+      "export": "validateIppltInput",
+      "files": [
+        "src/ipplt/contract.js"
+      ],
+      "dependsOn": []
+    },
+    "ipplt-rules@1.0.0": {
+      "kind": "rules",
+      "module": "src/ipplt/rules.js",
+      "export": "evaluateIppltRules",
+      "files": [
+        "src/ipplt/rules.js"
+      ],
+      "dependsOn": [
+        "ipplt-input@1.0.0"
+      ]
+    },
+    "decimal-group2@1.0.0": {
+      "kind": "formatter",
+      "files": [
+        "src/shared/formatters.js"
+      ],
+      "dependsOn": []
+    },
+    "ipplt-presentation@1.0.0": {
+      "kind": "preparer",
+      "module": "src/ipplt/view-model.js",
+      "export": "buildIppltViewModel",
+      "files": [
+        "src/ipplt/view-model.js"
+      ],
+      "dependsOn": [
+        "ipplt-rules@1.0.0",
+        "decimal-group2@1.0.0"
+      ]
+    },
+    "letter-common@1.0.0": {
+      "kind": "components",
+      "files": [
+        "components/address-with-barcode.hbs",
+        "components/app-download.hbs",
+        "components/page-footer.hbs",
+        "components/page-header.hbs",
+        "components/signature-block.hbs",
+        "assets/dis-zlagchg/app-qr.jpg",
+        "assets/dis-zlagchg/header-banner.png",
+        "assets/fwd-logo.svg",
+        "assets/pos-zlbnchg/fwd-seal.png",
+        "assets/pos-zlbnchg/header-banner.png",
+        "assets/pos-zlbnchg/signer-signature.png",
+        "assets/pos-zlbnchg/witness-signature.png",
+        "assets/signatures/fwd-seal.svg",
+        "assets/signatures/signer.svg",
+        "assets/signatures/witness.svg"
+      ],
+      "dependsOn": []
+    },
+    "fwd-thai@1.0.0": {
+      "kind": "brand",
+      "files": [
+        "styles/brand.css",
+        "styles/typography.css",
+        "fonts/AngsanaNew.ttf",
+        "fonts/NotoSansThai-Black.ttf",
+        "fonts/NotoSansThai-Bold.ttf",
+        "fonts/NotoSansThai-ExtraBold.ttf",
+        "fonts/NotoSansThai-ExtraLight.ttf",
+        "fonts/NotoSansThai-Light.ttf",
+        "fonts/NotoSansThai-Medium.ttf",
+        "fonts/NotoSansThai-Regular.ttf",
+        "fonts/NotoSansThai-SemiBold.ttf",
+        "fonts/NotoSansThai-Thin.ttf",
+        "assets/pos-zlbnchg/header-banner.png",
+        "assets/fwd-logo.svg"
+      ],
+      "dependsOn": []
+    },
+    "letter-flow@1.0.0": {
+      "kind": "layout",
+      "files": [
+        "styles/letter-header.css",
+        "styles/letter-address.css",
+        "styles/letter-flow.css"
+      ],
+      "dependsOn": [
+        "fwd-thai@1.0.0",
+        "letter-common@1.0.0"
+      ]
+    }
+  }
+}

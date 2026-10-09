@@ -1,0 +1,110 @@
+{
+  "date": "2026-10-03",
+  "renders": [
+    {
+      "fixture": "single",
+      "out": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/single/run-cnep1f",
+      "html": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/single/run-cnep1f/document.html",
+      "pdf": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/single/run-cnep1f/document.pdf"
+    },
+    {
+      "fixture": "multiple",
+      "out": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/multiple/run-t0pOGQ",
+      "html": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/multiple/run-t0pOGQ/document.html",
+      "pdf": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/multiple/run-t0pOGQ/document.pdf"
+    },
+    {
+      "fixture": "no-refund",
+      "out": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/no-refund/run-V6LjC2",
+      "html": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/no-refund/run-V6LjC2/document.html",
+      "pdf": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/no-refund/run-V6LjC2/document.pdf"
+    },
+    {
+      "fixture": "loan",
+      "out": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/loan/run-q5ESNW",
+      "html": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/loan/run-q5ESNW/document.html",
+      "pdf": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/loan/run-q5ESNW/document.pdf"
+    },
+    {
+      "fixture": "many-rows",
+      "out": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/many-rows/run-5Nrf7T",
+      "html": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/many-rows/run-5Nrf7T/document.html",
+      "pdf": "/Users/amber/Documents/CCM/poc-html-template/output/platform/letter.ipplt/1.0.0/many-rows/run-5Nrf7T/document.pdf"
+    }
+  ],
+  "bundle": {
+    "target": "/Users/amber/Documents/CCM/poc-html-template/output/platform-builds/letter.ipplt/1.0.0/bf304e2497a85c280118e5b0327345c5496d0179f2421d1b5ef430521ed49d4b",
+    "digest": "bf304e2497a85c280118e5b0327345c5496d0179f2421d1b5ef430521ed49d4b",
+    "reused": true
+  },
+  "readiness": {
+    "publishImplemented": false,
+    "localEvidenceReady": false,
+    "blockers": [
+      "Package is not approved",
+      "Matching-input source baseline acceptance is missing",
+      "rulesBusinessApproved is missing",
+      "visualApproved is missing",
+      "operationalApproved is missing",
+      "Upstream refund calculations and description preparation are not supplied.",
+      "Matching-data Exstream baselines are missing for native synthetic inputs.",
+      "Payment method dictionary and printed barcode scan acceptance are not verified."
+    ],
+    "note": "Local readiness report only; authenticated approvals and a production publisher are not implemented."
+  },
+  "visualChecks": [
+    {
+      "case": "single",
+      "physical_page": 1,
+      "sha256": "a7fddf0eb3ea3765f39544a0916a87f18d57db742b37e76fb28cfb671cd1aaf9",
+      "identical_to_existing_ipplt": true
+    },
+    {
+      "case": "multiple",
+      "physical_page": 1,
+      "sha256": "c0155b601124d2f268c9a30e3115764b387338986e88217264bb5c23c3fa8588",
+      "identical_to_existing_ipplt": true
+    },
+    {
+      "case": "no-refund",
+      "physical_page": 1,
+      "sha256": "68f1436f6fbe78372143bff22f1c10f5e8c43ed29a81dab5ab23b451fc3ee336",
+      "identical_to_existing_ipplt": true
+    },
+    {
+      "case": "loan",
+      "physical_page": 1,
+      "sha256": "ad8b95f1ef69fadf0e1a723e412738238f0994780b99672e4809fdcc39af7419",
+      "identical_to_existing_ipplt": true
+    },
+    {
+      "case": "many-rows",
+      "physical_page": 1,
+      "sha256": "9a2bcc43c395a981c47393f934503324e5e3d0bf02a9bccfc527972cfc725261",
+      "identical_to_existing_ipplt": true
+    },
+    {
+      "case": "many-rows",
+      "physical_page": 3,
+      "sha256": "a63aacfbb74716e4261bfd39e33c54ef5cab9c434056e690bb48b5d3bf57c7b0",
+      "identical_to_existing_ipplt": true
+    }
+  ],
+  "tests": {
+    "ipplt_groups": 15,
+    "platform_groups": 11
+  },
+  "forty_rows_in_order": true,
+  "snapshotRender": {
+    "html": "/Users/amber/Documents/CCM/poc-html-template/output/platform-builds/letter.ipplt/1.0.0/bf304e2497a85c280118e5b0327345c5496d0179f2421d1b5ef430521ed49d4b/output/platform/letter.ipplt/1.0.0/single/run-z5svoc/document.html",
+    "identical_to_existing_ipplt": true
+  },
+  "legacyPosDisHtmlUnchanged": true,
+  "latestVerifiedSnapshot": {
+    "target": "/Users/amber/Documents/CCM/poc-html-template/output/platform-builds/letter.ipplt/1.0.0/a3adb29bfef97beb87ccd1bdfd62f5fa3f434d4e434b3bf69100f4305a662b59",
+    "digest": "a3adb29bfef97beb87ccd1bdfd62f5fa3f434d4e434b3bf69100f4305a662b59",
+    "reused": true,
+    "renderedHtml": "/Users/amber/Documents/CCM/poc-html-template/output/platform-builds/letter.ipplt/1.0.0/a3adb29bfef97beb87ccd1bdfd62f5fa3f434d4e434b3bf69100f4305a662b59/output/platform/letter.ipplt/1.0.0/single/run-ijbMGP/document.html",
+    "identical_to_existing_ipplt": true
+  }
+}

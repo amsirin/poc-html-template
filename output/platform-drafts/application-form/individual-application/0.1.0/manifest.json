@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "ccm.template/1.0",
+  "id": "application-form.individual-application",
+  "version": "0.1.0",
+  "group": "application-form",
+  "mode": "compose",
+  "status": "draft",
+  "owner": "template-development",
+  "entry": "output/platform-drafts/application-form/individual-application/0.1.0/template.hbs",
+  "overrides": [],
+  "dependencies": {
+    "renderer": "handlebars-pdfreactor@1.0.0",
+    "contract": null,
+    "rules": null,
+    "preparer": null,
+    "layout": null,
+    "components": null,
+    "brand": null,
+    "formatters": []
+  },
+  "fixtures": {},
+  "evidence": "output/platform-drafts/application-form/individual-application/0.1.0/evidence.json",
+  "assembly": null,
+  "notes": "Draft scaffold only. Register reviewed dependencies and fixtures before validation/rendering."
+}

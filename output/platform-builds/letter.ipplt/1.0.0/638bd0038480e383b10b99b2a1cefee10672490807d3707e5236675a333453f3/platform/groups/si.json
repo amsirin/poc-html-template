@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "ccm.group/1.0",
+  "id": "si",
+  "title": "Sales Illustration",
+  "mode": "compose",
+  "allowedProfiles": [],
+  "authoring": "developer-git-pr",
+  "requiredCapabilities": [
+    "product/version/date selection",
+    "approved calculation service",
+    "benefit tables",
+    "long-table pagination",
+    "disclosures"
+  ],
+  "implementation": "scaffold-only; profiles and runtime capabilities need implementation and source validation"
+}

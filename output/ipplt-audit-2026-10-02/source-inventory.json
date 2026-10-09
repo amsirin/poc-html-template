@@ -1,0 +1,905 @@
+{
+  "source": "DXF/APP_IntegralLife_IPPLT.dxf",
+  "sha256": "781909b71aa5b80d178ce1e4f26e0e08f82a96434a34544cd42a6b252835927e",
+  "scope": "Static definition/reference closure only; not runtime or upstream completeness. No display-string/sample values retained.",
+  "variables": [
+    {
+      "id": "1894",
+      "name": "U_Agent_Full_Name",
+      "basic_line": 13,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "8970",
+      "name": "IL_DRV_AgentbranchCode",
+      "basic_line": 19,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6322",
+      "name": "IL_DRV_Agentbranchname",
+      "basic_line": 25,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "560",
+      "name": "U_Print_Date",
+      "basic_line": 31,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6624",
+      "name": "U_Owner_Name",
+      "basic_line": 37,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6625",
+      "name": "U_Addrs1",
+      "basic_line": 43,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6626",
+      "name": "U_Addrs2",
+      "basic_line": 49,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6627",
+      "name": "U_Addrs3",
+      "basic_line": 55,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6628",
+      "name": "U_Addrs4",
+      "basic_line": 61,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6629",
+      "name": "U_Province_Long_Des",
+      "basic_line": 67,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6630",
+      "name": "U_PostCode",
+      "basic_line": 73,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "5423",
+      "name": "IL_DRV_ProductLine",
+      "basic_line": 79,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "fileonly",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "customer",
+      "compute-time": "as-needed",
+      "format": "4",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "9790",
+      "name": "U_Payment_Amount_INT",
+      "basic_line": 85,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "9313",
+      "name": "IL_DRV_Check_Multi_Payment",
+      "basic_line": 91,
+      "data-type": "integer",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "5",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "7178",
+      "name": "IL_DRV_PaymentMethodStr",
+      "basic_line": 97,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "9791",
+      "name": "U_Payment_Amount_Draft",
+      "basic_line": 103,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "5883",
+      "name": "IL_DRV_ApplicationNumber",
+      "basic_line": 109,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6615",
+      "name": "U_Insure_Name",
+      "basic_line": 115,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6659",
+      "name": "U_Plan_Name",
+      "basic_line": 121,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "8388",
+      "name": "IL_U_LoanReferenceNumber",
+      "basic_line": 127,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6899",
+      "name": "U_Payment_Amount",
+      "basic_line": 133,
+      "data-type": "float",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "12",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "9239",
+      "name": "U_Payment_Method_One_TemplateShow",
+      "basic_line": 139,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "6227",
+      "name": "IL_DRV_PaymentDetail_PaymentMethod",
+      "basic_line": 145,
+      "data-type": "string",
+      "multi-valued": "true",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "9312",
+      "name": "IL_DRV_No_List",
+      "basic_line": 151,
+      "data-type": "integer",
+      "multi-valued": "true",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "5",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "9311",
+      "name": "U_Payment_Method_One_Template_List",
+      "basic_line": 157,
+      "data-type": "string",
+      "multi-valued": "true",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "auto",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    },
+    {
+      "id": "771",
+      "name": "V_FWD_PhoneNumber",
+      "basic_line": 163,
+      "data-type": "string",
+      "multi-valued": "false",
+      "var-calc-method": "constant",
+      "formula": "",
+      "is-a-formula": "false",
+      "array-type": "growing",
+      "array-reset": "none",
+      "compute-time": "as-needed",
+      "format": "1",
+      "format-string": "",
+      "num-digits": "2",
+      "decimal": ".",
+      "thousands": "",
+      "format-zero": "false",
+      "zero-string": "",
+      "neg-format": "minus"
+    }
+  ],
+  "usage_rules": [
+    {
+      "id": "9145",
+      "basic_line": 176,
+      "default_include": "false",
+      "body": "IF(U_Agent_Full_Name <> \"\") THEN\n     INCLUDE\nENDIF",
+      "use_lines": [
+        298
+      ]
+    },
+    {
+      "id": "9357",
+      "basic_line": 185,
+      "default_include": "false",
+      "body": "IF(U_Addrs1 <> \"\" AND U_Addrs1 <> \"-\") THEN\n     INCLUDE\nENDIF",
+      "use_lines": [
+        404
+      ]
+    },
+    {
+      "id": "9358",
+      "basic_line": 194,
+      "default_include": "false",
+      "body": "IF(U_Addrs2 <> \"\" AND U_Addrs2 <> \"-\") THEN\n     INCLUDE\nENDIF",
+      "use_lines": [
+        409
+      ]
+    },
+    {
+      "id": "9359",
+      "basic_line": 203,
+      "default_include": "false",
+      "body": "IF Replace(U_Addrs3, \"-\", \"\") <> \"\" OR Replace(U_Addrs4, \"-\", \"\") <> \"\" THEN\n     INCLUDE\nENDIF",
+      "use_lines": [
+        414
+      ]
+    },
+    {
+      "id": "9360",
+      "basic_line": 212,
+      "default_include": "false",
+      "body": "IF(U_Province_Long_Des <> \"\" OR U_PostCode <> \"\") THEN\n     INCLUDE\nENDIF",
+      "use_lines": [
+        423
+      ]
+    },
+    {
+      "id": "9361",
+      "basic_line": 221,
+      "default_include": "false",
+      "body": "IF(IL_DRV_Check_Multi_Payment = 1)THEN\nIF(IL_DRV_PaymentMethodStr = \"1\" OR IL_DRV_PaymentMethodStr = \"B\" OR IL_DRV_PaymentMethodStr = \"6\" ) THEN\n     INCLUDE\nENDIF\nENDIF",
+      "use_lines": [
+        445
+      ]
+    },
+    {
+      "id": "9362",
+      "basic_line": 232,
+      "default_include": "false",
+      "body": "IF(IL_DRV_Check_Multi_Payment > 1 AND U_Payment_Amount_Draft <> \"\") THEN\n     INCLUDE\nENDIF",
+      "use_lines": [
+        456
+      ]
+    },
+    {
+      "id": "8385",
+      "basic_line": 241,
+      "default_include": "false",
+      "body": "IF(IL_U_LoanReferenceNumber <> \"\") THEN\n     INCLUDE\nENDIF",
+      "use_lines": [
+        576
+      ]
+    },
+    {
+      "id": "8359",
+      "basic_line": 250,
+      "default_include": "false",
+      "body": "IF(U_Payment_Amount > 0 AND IL_DRV_Check_Multi_Payment = 1) THEN\n     INCLUDE\nENDIF",
+      "use_lines": [
+        605
+      ]
+    },
+    {
+      "id": "8381",
+      "basic_line": 259,
+      "default_include": "false",
+      "body": "IF(U_Payment_Amount > 0 AND IL_DRV_Check_Multi_Payment > 1) THEN\n     INCLUDE\nENDIF",
+      "use_lines": [
+        615,
+        625
+      ]
+    },
+    {
+      "id": "8360",
+      "basic_line": 268,
+      "default_include": "false",
+      "body": "IF(U_Payment_Amount > 0) THEN\n     INCLUDE\nENDIF",
+      "use_lines": [
+        652
+      ]
+    }
+  ],
+  "typed_references": [
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|9145|",
+      "element": "text"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|1894|U_Agent_Full_Name",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|8970|IL_DRV_AgentbranchCode",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6322|IL_DRV_Agentbranchname",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|560|U_Print_Date",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6624|U_Owner_Name",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|9357|",
+      "element": "block"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6625|U_Addrs1",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|9358|",
+      "element": "block"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6626|U_Addrs2",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|9359|",
+      "element": "block"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6627|U_Addrs3",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6628|U_Addrs4",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|9360|",
+      "element": "block"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6629|U_Province_Long_Des",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6630|U_PostCode",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|9361|",
+      "element": "block"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|5423|IL_DRV_ProductLine",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|9790|U_Payment_Amount_INT",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|9362|",
+      "element": "block"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|5423|IL_DRV_ProductLine",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|9791|U_Payment_Amount_Draft",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|5883|IL_DRV_ApplicationNumber",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6615|U_Insure_Name",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6659|U_Plan_Name",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|8385|",
+      "element": "table-row"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|8388|IL_U_LoanReferenceNumber",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|8359|",
+      "element": "block"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6899|U_Payment_Amount",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|9239|U_Payment_Method_One_TemplateShow",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|8381|",
+      "element": "block"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|6899|U_Payment_Amount",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|8381|",
+      "element": "block"
+    },
+    {
+      "attribute": "auto-row-ref-var",
+      "value": "Variable|6227|IL_DRV_PaymentDetail_PaymentMethod",
+      "element": "table-row"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|9312|IL_DRV_No_List",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|9311|U_Payment_Method_One_Template_List",
+      "element": "variable-use"
+    },
+    {
+      "attribute": "usage-rule",
+      "value": "Rule|8360|",
+      "element": "block"
+    },
+    {
+      "attribute": "varuse-variable",
+      "value": "Variable|771|V_FWD_PhoneNumber",
+      "element": "variable-use"
+    }
+  ],
+  "format_overrides": [
+    {
+      "varuse-aggregration": "none",
+      "varuse-array-index": "1",
+      "varuse-array-use": "automatic",
+      "varuse-custom-format": "###,###,###,##0.##",
+      "varuse-format": "0",
+      "varuse-justification": "none",
+      "varuse-length": "0",
+      "varuse-locator-search-key": "Search Key|0|",
+      "varuse-number-of-digits": "2",
+      "varuse-offset": "0",
+      "varuse-pad-character": "space",
+      "varuse-substitution-time": "-1",
+      "varuse-variable": "Variable|6899|U_Payment_Amount"
+    },
+    {
+      "varuse-aggregration": "none",
+      "varuse-array-index": "1",
+      "varuse-array-use": "automatic",
+      "varuse-custom-format": "###,###,###,##0.##",
+      "varuse-format": "0",
+      "varuse-justification": "none",
+      "varuse-length": "0",
+      "varuse-locator-search-key": "Search Key|0|",
+      "varuse-number-of-digits": "2",
+      "varuse-offset": "0",
+      "varuse-pad-character": "space",
+      "varuse-substitution-time": "-1",
+      "varuse-variable": "Variable|6899|U_Payment_Amount"
+    }
+  ],
+  "repeating_rows": [
+    {
+      "auto-row-column-flow": "none",
+      "auto-row-filter": "",
+      "auto-row-grouped": "false",
+      "auto-row-include-higher": "none",
+      "auto-row-include-level": "1",
+      "auto-row-level": "0",
+      "auto-row-num-div-repeat-rows": "4",
+      "auto-row-num-repeat": "1",
+      "auto-row-overlap": "overlap-none",
+      "auto-row-page-begin": "false",
+      "auto-row-process": "variable-count",
+      "auto-row-ref-var": "Variable|6227|IL_DRV_PaymentDetail_PaymentMethod",
+      "auto-row-repeat-headers": "false",
+      "auto-row-repeat-var-count": "0",
+      "auto-row-section-begin": "false",
+      "auto-row-section-max-rows": "0",
+      "auto-row-section-name": "",
+      "auto-row-section-orphan": "1",
+      "auto-row-section-ref-var": "Variable|0|",
+      "auto-row-section-use": "always",
+      "auto-row-serpertine-cells": "0",
+      "auto-row-special-row-props": "none"
+    }
+  ]
+}

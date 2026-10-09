@@ -1,0 +1,44 @@
+{{! DIS_ZLAGCHG — การเปลี่ยนแปลงตัวแทนผู้ให้บริการ.
+    Reconstructed from baselines/dis-zlagchg.pdf; no corresponding DXF supplied.
+    Literal wording follows the visible reference, including แก่ทาน and แอปพลิเคชั่น. }}
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <title>{{subject}}</title>
+  <link rel="stylesheet" href="../styles/brand.css">
+  <link rel="stylesheet" href="../styles/typography.css">
+  <link rel="stylesheet" href="../styles/layout.css">
+  <link rel="stylesheet" href="../styles/letter-header.css">
+  <link rel="stylesheet" href="../styles/letter-address.css">
+  <link rel="stylesheet" href="../styles/dis-zlagchg.css">
+</head>
+<body>
+  <article class="page dis-letter">
+    {{> page-header}}
+    <p class="letter-date">{{printDate}}</p>
+    {{> address-with-barcode}}
+
+    <h1 class="text-subject">เรื่อง {{subject}}</h1>
+    <p class="policy-reference">กรมธรรม์ประกันภัยเลขที่ {{policy.number}}</p>
+
+    <p class="body-para appreciation">
+      บริษัทฯ ขอขอบพระคุณท่านเป็นอย่างสูงที่มอบความไว้วางใจให้บริษัทฯ ในการสร้างหลักประกันความมั่นคง<br>ทางการเงินของท่านและครอบครัว
+    </p>
+    <p class="body-para agent-introduction">
+      เพื่ออำนวยความสะดวกในการบริการ บริษัทฯ ขอเรียนให้ท่านทราบว่า {{agent.title}} {{agent.name}} คือตัวแทนคนใหม่ที่จะ<br>ดูแลและให้บริการแก่ทาน ซึ่งท่านสามารถติดต่อได้ที่ โทร{{#if agent.phoneNumber}} {{agent.phoneNumber}}{{/if}}
+    </p>
+    <p class="body-para policy-advice">
+      อนึ่ง กรมธรรม์ประกันชีวิตของท่านคือทรัพย์สินที่มีค่าควรแก่การรักษาไว้เป็นอย่างยิ่ง หากท่านได้รับการติดต่อ<br>เพื่อขอให้พิจารณายกเลิกหรือเปลี่ยนแปลงกรมธรรม์ฉบับที่ถืออยู่นั้น การกระทำดังกล่าวอาจทำให้ท่านสูญเสียผล<br>ประโยชน์อันพึงได้รับตามกรมธรรม์ หรืออาจต้องชำระเบี้ยประกันภัยที่สูงขึ้น ดังนั้น ถ้าท่านต้องการคำปรึกษาแนะนำเกี่ยว<br>กับกรมธรรม์และผลประโยชน์ของท่านสามารถสอบถามรายละเอียดเพิ่มเติม ได้ที่ศูนย์บริการลูกค้าเอฟดับบลิวดี โทร. {{contact.phoneNumber}}<br>เราพร้อมดูแลคุณทุกวัน {{contact.hours}} หรือจัดการกรมธรรม์ออนไลน์ด้วยตัวเองได้ที่แอปพลิเคชั่น {{appDownload.name}}
+    </p>
+
+    <div class="letter-closing">
+      {{> app-download}}
+      <footer class="company-signoff">
+        <p>ขอแสดงความนับถือ</p>
+        <p>{{company.signoffName}}</p>
+      </footer>
+    </div>
+  </article>
+</body>
+</html>

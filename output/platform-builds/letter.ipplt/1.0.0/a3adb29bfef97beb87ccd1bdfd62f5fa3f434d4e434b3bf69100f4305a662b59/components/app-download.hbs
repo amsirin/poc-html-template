@@ -1,0 +1,8 @@
+{{! Data: appDownload.{name,qrImagePath}; use only an approved static app QR asset. }}
+<aside class="app-download" aria-label="ดาวน์โหลดแอปพลิเคชัน">
+  <div class="app-download__copy">
+    <p class="app-download__heading">บริการกรมธรรม์ออนไลน์<br>ผ่านแอปพลิเคชัน {{appDownload.name}}</p>
+    <p class="app-download__description">ยื่นเคลมหรือจัดการกรมธรรม์ออนไลน์<br>ให้ชีวิตคุณง่ายขึ้นทุกด้าน สแกนเพื่อดาวน์โหลด</p>
+  </div>
+  <img class="app-download__qr" src="{{appDownload.qrImagePath}}" alt="QR ดาวน์โหลด {{appDownload.name}}">
+</aside>

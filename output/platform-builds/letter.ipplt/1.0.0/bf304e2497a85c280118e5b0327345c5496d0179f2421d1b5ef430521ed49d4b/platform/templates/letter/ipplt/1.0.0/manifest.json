@@ -1,0 +1,35 @@
+{
+  "schemaVersion": "ccm.template/1.0",
+  "id": "letter.ipplt",
+  "version": "1.0.0",
+  "group": "letter",
+  "mode": "compose",
+  "status": "draft",
+  "owner": "template-development",
+  "entry": "templates/ipplt.hbs",
+  "overrides": [
+    "styles/ipplt.css"
+  ],
+  "dependencies": {
+    "renderer": "handlebars-pdfreactor@1.0.0",
+    "contract": "ipplt-input@1.0.0",
+    "rules": "ipplt-rules@1.0.0",
+    "preparer": "ipplt-presentation@1.0.0",
+    "layout": "letter-flow@1.0.0",
+    "components": "letter-common@1.0.0",
+    "brand": "fwd-thai@1.0.0",
+    "formatters": [
+      "decimal-group2@1.0.0"
+    ]
+  },
+  "fixtures": {
+    "single": "data-samples/ipplt/single.json",
+    "multiple": "data-samples/ipplt/multiple.json",
+    "no-refund": "data-samples/ipplt/no-refund.json",
+    "loan": "data-samples/ipplt/loan.json",
+    "many-rows": "data-samples/ipplt/many-rows.json"
+  },
+  "evidence": "platform/templates/letter/ipplt/1.0.0/evidence.json",
+  "assembly": null,
+  "notes": "Bridge package reuses the existing validated PoC files without duplicating them. Catalog versions are preview labels; a build lock pins actual bytes. Not a production release."
+}

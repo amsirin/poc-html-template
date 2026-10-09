@@ -1,0 +1,29 @@
+{{! Common letter header. Two modes:
+    - If company.headerImagePath is set → use pre-rendered image (highest
+      fidelity vs Exstream baseline, non-editable — company info baked into PNG)
+    - Otherwise → semantic HTML (editable, small pixel drift from baseline)
+    Data expected:
+      company: {
+        headerImagePath?: "path/to/header.png",    // optional
+        name, addressLine1, addressLine2, contactLine, website  // used only if no image
+      } }}
+{{#if company.headerImagePath}}
+<header class="page-header page-header--image">
+  <img class="page-header__banner" src="{{company.headerImagePath}}" alt="{{company.name}}" />
+</header>
+{{else}}
+<header class="page-header">
+  <div class="page-header__company">
+    <p class="text-brand"><strong>{{company.name}}</strong></p>
+    <p class="text-small text-muted">{{company.addressLine1}}</p>
+    <p class="text-small text-muted">{{company.addressLine2}}</p>
+    <p class="text-small text-muted">
+      {{company.contactLine}}
+      <span class="text-brand">{{company.website}}</span>
+    </p>
+  </div>
+  <div class="page-header__logo">
+    <img src="../assets/fwd-logo.svg" alt="FWD Insurance" />
+  </div>
+</header>
+{{/if}}

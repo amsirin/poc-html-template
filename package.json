@@ -1,0 +1,31 @@
+{
+  "name": "ccm-poc-html-template",
+  "version": "0.1.0",
+  "description": "PoC: Exstream DXF \u2192 semantic HTML template \u2192 PDFreactor \u2192 PDF (maintainable authoring path for 800-template migration)",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "scripts": {
+    "inspect": "node src/dxf-inspect.js",
+    "render": "node src/render.js",
+    "pdf": "node src/html-to-pdf.js",
+    "example:ipplt": "node src/ipplt/run-example.js",
+    "test:ipplt": "node tests/ipplt.test.js",
+    "diff": "node tools/visual-diff/diff-pdfreactor.js",
+    "diff:chrome": "node tools/visual-diff/diff.js",
+    "viewer": "node tools/review-viewer/build.js && open tools/review-viewer/index.html",
+    "platform": "node platform/cli.js",
+    "test:platform": "node tests/platform.test.js"
+  },
+  "dependencies": {
+    "bwip-js": "^4.11.4",
+    "fast-xml-parser": "^4.3.0",
+    "handlebars": "^4.7.8"
+  },
+  "devDependencies": {
+    "pixelmatch": "^5.3.0",
+    "pngjs": "^7.0.0",
+    "puppeteer-core": "^20.9.0"
+  }
+}

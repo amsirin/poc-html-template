@@ -1,0 +1,54 @@
+[
+  {
+    "case": "single",
+    "total_pages": 2,
+    "evaluation_pages": [
+      2
+    ],
+    "document_pages": [
+      1
+    ]
+  },
+  {
+    "case": "multiple",
+    "total_pages": 2,
+    "evaluation_pages": [
+      2
+    ],
+    "document_pages": [
+      1
+    ]
+  },
+  {
+    "case": "no-refund",
+    "total_pages": 2,
+    "evaluation_pages": [
+      2
+    ],
+    "document_pages": [
+      1
+    ]
+  },
+  {
+    "case": "loan",
+    "total_pages": 2,
+    "evaluation_pages": [
+      2
+    ],
+    "document_pages": [
+      1
+    ]
+  },
+  {
+    "case": "many-rows",
+    "total_pages": 3,
+    "evaluation_pages": [
+      2
+    ],
+    "document_pages": [
+      1,
+      3
+    ],
+    "rows_verified_in_order": 40
+  }
+]

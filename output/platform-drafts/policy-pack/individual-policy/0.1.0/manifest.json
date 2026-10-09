@@ -1,0 +1,25 @@
+{
+  "schemaVersion": "ccm.template/1.0",
+  "id": "policy-pack.individual-policy",
+  "version": "0.1.0",
+  "group": "policy-pack",
+  "mode": "assemble",
+  "status": "draft",
+  "owner": "template-development",
+  "entry": null,
+  "overrides": [],
+  "dependencies": {
+    "renderer": "handlebars-pdfreactor@1.0.0",
+    "contract": null,
+    "rules": null,
+    "preparer": null,
+    "layout": null,
+    "components": null,
+    "brand": null,
+    "formatters": []
+  },
+  "fixtures": {},
+  "evidence": "output/platform-drafts/policy-pack/individual-policy/0.1.0/evidence.json",
+  "assembly": "output/platform-drafts/policy-pack/individual-policy/0.1.0/assembly.json",
+  "notes": "Draft scaffold only. Register reviewed dependencies and fixtures before validation/rendering."
+}

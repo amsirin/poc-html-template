@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-03",
+  "pos_dis_regressions": [
+    {
+      "file": "output/pos-zlbnchg-diff/rendered-1.png",
+      "before_sha256": "a535bfd01fec86979000e9bc8f249094b3712618ed995794567db7258d2ba533",
+      "after_sha256": "a535bfd01fec86979000e9bc8f249094b3712618ed995794567db7258d2ba533",
+      "identical": true
+    },
+    {
+      "file": "output/dis-zlagchg-diff/rendered-1.png",
+      "before_sha256": "66d9e44633f8c3fdb1058d22c47617721b29614be348905782259709c982e8ba",
+      "after_sha256": "66d9e44633f8c3fdb1058d22c47617721b29614be348905782259709c982e8ba",
+      "identical": true
+    }
+  ],
+  "ipplt_cases": [
+    {
+      "case": "single",
+      "total_pages": 2,
+      "evaluation_pages": [
+        2
+      ],
+      "document_pages": [
+        1
+      ]
+    },
+    {
+      "case": "multiple",
+      "total_pages": 2,
+      "evaluation_pages": [
+        2
+      ],
+      "document_pages": [
+        1
+      ]
+    },
+    {
+      "case": "no-refund",
+      "total_pages": 2,
+      "evaluation_pages": [
+        2
+      ],
+      "document_pages": [
+        1
+      ]
+    },
+    {
+      "case": "loan",
+      "total_pages": 2,
+      "evaluation_pages": [
+        2
+      ],
+      "document_pages": [
+        1
+      ]
+    },
+    {
+      "case": "many-rows",
+      "total_pages": 3,
+      "evaluation_pages": [
+        2
+      ],
+      "document_pages": [
+        1,
+        3
+      ],
+      "rows_verified_in_order": 40
+    }
+  ],
+  "ipplt_tests": "12 groups passed",
+  "visual_review": "All six document pages inspected; no content overlaps observed in these fixtures.",
+  "reference_only_grid": {
+    "single": 96.95,
+    "loan": 95.49
+  },
+  "limitations": [
+    "Synthetic data differs from reference",
+    "Flow spacing and agent position still differ",
+    "Not production parity or barcode scanning validation"
+  ]
+}

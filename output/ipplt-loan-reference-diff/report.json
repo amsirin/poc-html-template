@@ -1,0 +1,30 @@
+{
+  "engine": "pdfreactor",
+  "pdfreactorUrl": "http://localhost:9423",
+  "htmlPath": "/Users/amber/Documents/CCM/poc-html-template/output/ipplt/loan.html",
+  "pdfPath": "/Users/amber/Documents/CCM/PDF/Letter/IPPLT/NB_IPPLT__05451834_MASTER_CCM999A04_2026082400232623.pdf",
+  "dpi": 150,
+  "overallPageSimilarity": 97.22,
+  "overallContentSimilarity": 4.93,
+  "overallGridSimilarity": 95.5,
+  "pageCount": 1,
+  "results": [
+    {
+      "page": 1,
+      "pageSimilarity": 97.22,
+      "contentSimilarity": 4.93,
+      "gridSimilarity": 95.5,
+      "numDiffPixels": 60406,
+      "totalPixels": 2176200,
+      "inkBaseline": 101671,
+      "inkRendered": 94190,
+      "inkUnion": 172187,
+      "diffInInkUnion": 163694,
+      "width": 1240,
+      "height": 1755,
+      "baseline": "baseline-1.png",
+      "rendered": "rendered-1.png",
+      "diff": "diff-01.png"
+    }
+  ]
+}

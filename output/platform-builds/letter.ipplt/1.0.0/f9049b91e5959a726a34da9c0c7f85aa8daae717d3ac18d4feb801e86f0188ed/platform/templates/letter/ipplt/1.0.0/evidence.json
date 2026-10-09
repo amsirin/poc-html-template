@@ -1,0 +1,26 @@
+{
+  "origin": "migration",
+  "sourceMapping": "IPPLT_DATA_CONTRACT.md",
+  "sourceAudit": "IPPLT_RULE_REVIEW.md",
+  "matchingInputBaseline": false,
+  "rulesBusinessApproved": false,
+  "visualApproved": false,
+  "operationalApproved": false,
+  "requiredFixtureCases": [
+    "single",
+    "multiple",
+    "no-refund",
+    "loan",
+    "many-rows"
+  ],
+  "openIssues": [
+    "Upstream refund calculations and description preparation are not supplied.",
+    "Matching-data Exstream baselines are missing for native synthetic inputs.",
+    "Payment method dictionary and printed barcode scan acceptance are not verified."
+  ],
+  "localEvidence": [
+    "output/ipplt-standardization/rule-parity.json",
+    "output/ipplt-standardization/visual-parity.json"
+  ],
+  "notes": "Local parity with the previous PoC is not Exstream business acceptance. New-authored templates use origin=new with specification-based expected outputs instead of mandatory Exstream baselines."
+}

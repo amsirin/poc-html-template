@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60">
+  <rect width="120" height="42" rx="2" fill="#E87722"/>
+  <text x="60" y="30" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-weight="700" font-size="20">FWD</text>
+  <text x="60" y="55" text-anchor="middle" fill="#E87722" font-family="Arial, sans-serif" font-weight="500" font-size="8">insurance</text>
+</svg>

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "ccm.group/1.0",
+  "id": "policy-pack",
+  "title": "Policy Pack",
+  "mode": "assemble",
+  "allowedProfiles": [],
+  "authoring": "developer-git-pr",
+  "requiredCapabilities": [
+    "ordered generated documents",
+    "versioned PDF attachments",
+    "duplex fillers",
+    "mixed numbering",
+    "missing attachment failure"
+  ],
+  "implementation": "scaffold-only; profiles and runtime capabilities need implementation and source validation"
+}

@@ -1,0 +1,50 @@
+/* Reusable A4 correspondence family: flow content, automatic pagination.
+   Load brand, typography, header, address, this family, then profile tokens.
+   Do not combine with layout.css (the fixed-page family).
+   Page geometry is family-wide; component differences use inherited tokens. */
+@page correspondence {
+  size: A4;
+  margin: 40pt 63pt 48pt;
+  @bottom-left { content: element(letter-footer); vertical-align: top; }
+  @bottom-right { content: "หน้า " counter(page); font-size: 8pt; vertical-align: top; }
+}
+@page correspondence:first { margin-top: 0; }
+.letter-flow {
+  page: correspondence;
+  margin: 0;
+  padding: 0;
+  color: var(--fwd-text);
+  font-size: var(--size-body);
+  line-height: 13.44pt;
+  --page-margin-x: 63pt;
+  --header-top-margin: 0pt;
+  --header-left: -63pt;
+  --address-margin: 0 0 12pt;
+  --address-min-height: 98pt;
+  --address-bottom: 0pt;
+  --address-width: 210pt;
+}
+.letter-flow__content { position: relative; }
+.letter-flow .running-footer { position: running(letter-footer); font-size: var(--size-footer); color: var(--fwd-text-muted); }
+.letter-flow .running-footer span { display: block; }
+.letter-flow .letter-date { position: relative; text-align: right; margin: 5pt 103pt 18pt 0; }
+.letter-flow .letter-subject { font-size: var(--size-subject); margin: 0 0 8pt; break-after: avoid; }
+.letter-flow .salutation { margin: 0 0 9pt; }
+.letter-flow .body-para { margin: 13.44pt 0; text-indent: var(--body-indent); orphans: 2; widows: 2; }
+.letter-flow .letter-details { margin: 16pt 0 18pt var(--body-indent); break-inside: avoid; }
+.letter-flow .letter-heading { color: var(--fwd-orange); font-size: var(--size-heading); margin: 0 0 4pt; }
+.letter-flow table { border-collapse: collapse; width: 100%; }
+.letter-flow th, .letter-flow td { text-align: left; vertical-align: top; padding: 3pt 0; }
+.letter-flow th { width: var(--details-label-width, 100pt); font-weight: normal; }
+.letter-flow .letter-list { margin-left: var(--body-indent); width: calc(100% - var(--body-indent)); }
+.letter-flow tr { break-inside: avoid; }
+.letter-flow .row-number { width: 20pt; }
+.letter-flow .payment-code { margin: 4pt 0 12pt; text-align: center; font-size: 9pt; }
+.letter-flow .payment-spacing { height: 5pt; }
+.letter-flow .signoff { text-align: center; margin: 18pt 0 28pt var(--signoff-left, 215pt); break-inside: avoid; }
+.letter-flow .signoff p, .letter-flow .agent p { margin: 0; }
+.letter-flow .agent { margin-top: 24pt; font-size: 9pt; break-inside: avoid; }
+@media screen {
+  .letter-flow { max-width: 469pt; padding: 0 63pt 48pt; margin: auto; }
+  .letter-flow .running-footer { position: static; margin-bottom: 8pt; }
+}

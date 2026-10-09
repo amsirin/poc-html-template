@@ -1,0 +1,20 @@
+{
+  "_note": "Masked sample transcribed from the supplied DIS baseline. No DXF/data contract was supplied. Agent phone is blank in the reference; the app QR is an extracted static asset, not a customer-specific code.",
+  "printDate": "26 กุมภาพันธ์ 2569",
+  "subject": "การเปลี่ยนแปลงตัวแทนผู้ให้บริการ",
+  "recipient": {
+    "title": "คุณ",
+    "name": "XXXXX XXXXX",
+    "addressLines": ["XXXXX", "XXXXX", "XXXXX 43130"]
+  },
+  "policy": { "number": "CCM999A01" },
+  "barcode": { "value": "CCM999A01", "displayText": "*CCM999A01*" },
+  "agent": { "title": "คุณ", "name": "XXXXX XXXXX", "phoneNumber": "" },
+  "contact": { "phoneNumber": "1351", "hours": "08.00-20.00 น." },
+  "company": {
+    "headerImagePath": "../assets/dis-zlagchg/header-banner.png",
+    "name": "บริษัท เอฟดับบลิวดี ประกันชีวิต จำกัด (มหาชน)",
+    "signoffName": "บริษัทเอฟดับบลิวดี ประกันชีวิต จำกัด(มหาชน)"
+  },
+  "appDownload": { "name": "FWD Omne", "qrImagePath": "../assets/dis-zlagchg/app-qr.jpg" }
+}

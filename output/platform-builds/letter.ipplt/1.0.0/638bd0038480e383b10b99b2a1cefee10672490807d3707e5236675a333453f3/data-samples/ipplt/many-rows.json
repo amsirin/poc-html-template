@@ -1,0 +1,248 @@
+{
+  "_note": "Synthetic standard platform input v1. Resolved display values; no customer data or inferred upstream calculations.",
+  "schemaVersion": "1.0",
+  "document": {
+    "dateText": "2 ตุลาคม 2569",
+    "reference": "IPPLT-DEMO-40",
+    "barcodeValue": "IPPLT-DEMO-40"
+  },
+  "recipient": {
+    "fullName": "คุณ ผู้รับตัวอย่าง",
+    "address": {
+      "lines": [
+        "123 ถนนตัวอย่าง",
+        "แขวงตัวอย่าง",
+        "เขตตัวอย่าง ",
+        "กรุงเทพมหานคร 10000"
+      ]
+    }
+  },
+  "application": {
+    "number": "APP-DEMO-001",
+    "insuredName": "คุณ ผู้เอาประกันตัวอย่าง",
+    "planName": "แบบประกันสำหรับการทดสอบ",
+    "loanAccountNumber": ""
+  },
+  "agent": {
+    "fullName": "คุณ ตัวแทนตัวอย่าง",
+    "branch": {
+      "code": "TEST01",
+      "name": "สำนักงานตัวอย่าง"
+    }
+  },
+  "refund": {
+    "totalAmount": "12500.00",
+    "paymentCount": 40,
+    "methodCode": "",
+    "references": {
+      "single": "NB_ILD1250000",
+      "batch": "NB_ILD1250000"
+    },
+    "description": "",
+    "items": [
+      {
+        "sequence": 1,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-001 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 2,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-002 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 3,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-003 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 4,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-004 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 5,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-005 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 6,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-006 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 7,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-007 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 8,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-008 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 9,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-009 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 10,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-010 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 11,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-011 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 12,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-012 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 13,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-013 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 14,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-014 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 15,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-015 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 16,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-016 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 17,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-017 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 18,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-018 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 19,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-019 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 20,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-020 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 21,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-021 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 22,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-022 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 23,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-023 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 24,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-024 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 25,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-025 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 26,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-026 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 27,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-027 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 28,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-028 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 29,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-029 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 30,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-030 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 31,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-031 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 32,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-032 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 33,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-033 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 34,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-034 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 35,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-035 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 36,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-036 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 37,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-037 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 38,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-038 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 39,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-039 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      },
+      {
+        "sequence": 40,
+        "methodCode": "4",
+        "description": "รายการทดสอบ ROW-040 คืนเงินเข้าบัญชีตัวอย่าง 312.50 บาท"
+      }
+    ]
+  },
+  "contact": {
+    "phoneNumber": "1351"
+  }
+}

@@ -1,0 +1,75 @@
+/* Fixed-page family (POS/DIS). Flow letters use letter-flow.css instead.
+   Shared header/address component CSS loads after the selected family. */
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+}
+
+.page {
+  position: relative;
+  width: 210mm;
+  min-height: 297mm;
+  padding: var(--page-margin-top) var(--page-margin-x) var(--page-margin-bottom);
+  box-sizing: border-box;
+  page-break-after: always;
+}
+.page:last-child { page-break-after: auto; }
+
+/* Common structural blocks */
+.letter-date { text-align: right; margin: var(--space-section) 0 var(--space-section); }
+.recipient-address p { margin: 0; }
+.recipient-address { margin-bottom: var(--space-section); }
+
+.body-para { margin: var(--space-para) 0; text-indent: var(--body-indent); }
+.body-para--no-indent { text-indent: 0; }
+
+/* Definition-list layout for policy details — indent 36pt to match Exstream */
+dl.details {
+  display: grid;
+  grid-template-columns: 130pt 1fr;
+  row-gap: 4pt;
+  margin: var(--space-para) 0;
+  padding-left: var(--body-indent);   /* matches body-para indent */
+}
+dl.details dt { font-weight: 400; color: var(--fwd-text); }
+dl.details dd { margin: 0; }
+
+/* Bullet lists — indent to match Exstream body indent, bullet ~12pt inside */
+ul.plain {
+  list-style: none;
+  padding-left: var(--body-indent);
+  margin: var(--space-para) 0;
+}
+ul.plain > li {
+  position: relative;
+  padding-left: 12pt;
+  margin-bottom: 4pt;
+}
+ul.plain > li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--fwd-text);
+}
+
+/* Page footer bar at bottom of each page */
+.page-footer {
+  position: absolute;
+  left: var(--page-margin-x);
+  right: var(--page-margin-x);
+  bottom: 20pt;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--size-footer);
+  color: var(--fwd-text-muted);
+  border-top: 1pt solid var(--fwd-line);
+  padding-top: 6pt;
+}

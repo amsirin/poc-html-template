@@ -1,0 +1,74 @@
+{
+  "pdfreactor_version": "12.7.1 (18291)",
+  "document_javascript_disabled": true,
+  "synthetic_cases": [
+    {
+      "case": "single",
+      "total_pages": 2,
+      "evaluation_pages": [
+        2
+      ],
+      "document_pages": [
+        1
+      ]
+    },
+    {
+      "case": "multiple",
+      "total_pages": 2,
+      "evaluation_pages": [
+        2
+      ],
+      "document_pages": [
+        1
+      ]
+    },
+    {
+      "case": "no-refund",
+      "total_pages": 2,
+      "evaluation_pages": [
+        2
+      ],
+      "document_pages": [
+        1
+      ]
+    },
+    {
+      "case": "loan",
+      "total_pages": 2,
+      "evaluation_pages": [
+        2
+      ],
+      "document_pages": [
+        1
+      ]
+    },
+    {
+      "case": "many-rows",
+      "total_pages": 3,
+      "evaluation_pages": [
+        2
+      ],
+      "document_pages": [
+        1,
+        3
+      ],
+      "rows_verified_in_order": 40
+    }
+  ],
+  "baseline_comparison": false,
+  "tests": "15 groups passed; 437 local before/after view-model comparisons passed",
+  "visual_review": "All six document pages reviewed; no text/table/closing/footer overlaps observed in these fixtures.",
+  "validation_date": "2026-10-03",
+  "layout": "shared barcode profile correction",
+  "reference_comparisons": {
+    "single_grid": 96.95,
+    "loan_grid": 95.5,
+    "parity_acceptance": false
+  },
+  "barcode_dimensions_pt": [
+    62.2,
+    25
+  ],
+  "data_contract": "Standard input 1.0; optional migration adapter isolated",
+  "standardization_visual_parity": "Six document PNGs identical to before refactor; HTML differs only in semantic rule labels."
+}

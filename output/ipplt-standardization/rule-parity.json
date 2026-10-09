@@ -1,0 +1,6 @@
+{
+  "date": "2026-10-03",
+  "comparisons": 437,
+  "result": "passed",
+  "comparison": "Visible view-model fields before vs after refactor; hidden reference strings and ruleTrace identifiers excluded. This compares local implementations, not Exstream execution."
+}

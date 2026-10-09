@@ -1,0 +1,32 @@
+{
+  "comparisons": {
+    "ipplt-single-reference": {
+      "referenceOnly": true,
+      "note": "IPPLT single-payment example vs Exstream case A03. ข้อมูลสังเคราะห์ต่างจากต้นฉบับ: ชื่อ ที่อยู่ วันที่ จำนวนเงิน และรายละเอียดการคืนเงิน รวมถึง layout ของ PoC ยังไม่ได้ปรับให้ตรงทั้งหมด คะแนนนี้ใช้สำรวจภาพเท่านั้น ไม่ใช่ผลยืนยันความเหมือนของ template. Fresh comparison: 2026-10-03. Shared-CSS follow-up: shared header/address; flow spacing and agent position still differ from reference. Latest barcode correction: shared 62.2 x 25pt profile; visible bar dimensions verified from the PDF raster."
+    },
+    "ipplt-loan-reference": {
+      "referenceOnly": true,
+      "note": "IPPLT loan example vs Exstream case A04. ข้อมูลสังเคราะห์ต่างจากต้นฉบับ รวมถึงเลขใบคำขอ เลขเงินกู้ และยอดคืนเงิน คะแนนรวมความต่างของข้อมูลและ layout จึงไม่ใช่ผลยืนยัน business rules หรือ template parity. Fresh comparison: 2026-10-03. Shared-CSS follow-up: shared header/address; flow spacing and agent position still differ from reference. Latest barcode correction: shared 62.2 x 25pt profile; visible bar dimensions verified from the PDF raster."
+    },
+    "pos-zlbnchg": {
+      "note": "Fresh 2026-10-03 barcode correction: shared 62.2 x 25pt profile. Size standardization intentionally changes the barcode appearance versus the original; before/after pixels outside the barcode region are identical. Printed scanner acceptance has not been tested."
+    },
+    "dis-zlagchg": {
+      "note": "Fresh 2026-10-03 barcode correction: shared 62.2 x 25pt profile. Size standardization intentionally changes the barcode appearance versus the original; before/after pixels outside the barcode region are identical. Printed scanner acceptance has not been tested."
+    }
+  },
+  "previews": [
+    {
+      "label": "Multiple payments (2 rows)",
+      "path": "output/ipplt/multiple.pdf"
+    },
+    {
+      "label": "No refund",
+      "path": "output/ipplt/no-refund.pdf"
+    },
+    {
+      "label": "40 rows / pagination",
+      "path": "output/ipplt/many-rows.pdf"
+    }
+  ]
+}

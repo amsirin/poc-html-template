@@ -1,0 +1,44 @@
+{
+  "_note": "Synthetic resolved values for the IPPLT Handlebars example. No original customer data; no inferred upstream formulas. Amount is an exact two-decimal string under the demo contract.",
+  "source": {
+    "U_Agent_Full_Name": "คุณ ตัวแทนตัวอย่าง",
+    "IL_DRV_AgentbranchCode": "TEST01",
+    "IL_DRV_Agentbranchname": "สำนักงานตัวอย่าง",
+    "U_Print_Date": "2 ตุลาคม 2569",
+    "U_Owner_Name": "คุณ ผู้รับตัวอย่าง",
+    "U_Addrs1": "123 ถนนตัวอย่าง",
+    "U_Addrs2": "แขวงตัวอย่าง",
+    "U_Addrs3": "เขตตัวอย่าง",
+    "U_Addrs4": "",
+    "U_Province_Long_Des": "กรุงเทพมหานคร",
+    "U_PostCode": "10000",
+    "IL_DRV_ProductLine": "IL",
+    "U_Payment_Amount_INT": "1250000",
+    "IL_DRV_Check_Multi_Payment": 2,
+    "IL_DRV_PaymentMethodStr": "",
+    "U_Payment_Amount_Draft": "1250000",
+    "IL_DRV_ApplicationNumber": "APP-DEMO-001",
+    "U_Insure_Name": "คุณ ผู้เอาประกันตัวอย่าง",
+    "U_Plan_Name": "แบบประกันสำหรับการทดสอบ",
+    "IL_U_LoanReferenceNumber": "",
+    "U_Payment_Amount": "12500.00",
+    "U_Payment_Method_One_TemplateShow": "",
+    "IL_DRV_PaymentDetail_PaymentMethod": [
+      "4",
+      "2"
+    ],
+    "IL_DRV_No_List": [
+      1,
+      2
+    ],
+    "U_Payment_Method_One_Template_List": [
+      "คืนเงินเข้าบัญชีธนาคารตัวอย่าง เลขที่บัญชี TEST-0001 จำนวน 5,000.00 บาท",
+      "คืนเงินเข้าบัตรเครดิตตัวอย่าง หมายเลข TEST-0002 จำนวน 7,500.00 บาท"
+    ],
+    "V_FWD_PhoneNumber": "1351"
+  },
+  "presentation": {
+    "barcodeValue": "IPPLT-DEMO-02",
+    "footerReference": "IPPLT-DEMO-02"
+  }
+}

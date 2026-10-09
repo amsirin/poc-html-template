@@ -1,0 +1,34 @@
+/* FWD brand tokens — shared across every template.
+   Change here → propagates to all 800 templates. */
+
+:root {
+  /* Palette */
+  --fwd-orange: #E87722;
+  --fwd-orange-dark: #C25A0F;
+  --fwd-black: #000000;
+  --fwd-text: #1a1a1a;
+  --fwd-text-muted: #666666;
+  --fwd-text-subtle: #888888;
+  --fwd-line: #cccccc;
+
+  /* Typography */
+  --font-thai: 'Noto Sans Thai UI', 'Noto Sans Thai', 'Sarabun', sans-serif;
+  --font-latin: 'Noto Sans', 'Helvetica Neue', Arial, sans-serif;
+
+  /* Sizing (baseline uses 10pt body — matched here) */
+  --size-body: 10pt;
+  --size-small: 8pt;
+  --size-subject: 12pt;
+  --size-heading: 10pt;
+  --size-footer: 7pt;
+
+  /* Spacing */
+  --space-para: 8pt;
+  --space-section: 14pt;
+
+  /* Page (baseline PDF measured: left margin 63pt, top ~40pt) */
+  --page-margin-top: 40pt;
+  --page-margin-bottom: 40pt;
+  --page-margin-x: 63pt;
+  --body-indent: 36pt;         /* Exstream body-paragraph first-line indent */
+}

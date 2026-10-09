@@ -1,0 +1,16 @@
+{{! Letter address and dynamic Code 39 barcode.
+    Data: recipient.{title,name,addressLines,postcode?}, barcode.{value,displayText}.
+    Shared letter barcode profile: Code 39, source height 20mm, scale 2.
+    fit="box" fills the standard CSS box independently of encoded text length.
+    Templates supply data only; do not pass per-letter size parameters. }}
+<div class="address-with-barcode">
+  <address class="recipient-address">
+    <p>{{recipient.title}} {{recipient.name}}</p>
+    {{#each recipient.addressLines}}<p>{{this}}</p>{{/each}}
+    {{#if recipient.postcode}}<p>{{recipient.postcode}}</p>{{/if}}
+  </address>
+  <div class="barcode">
+    {{{barcode barcode.value bcid="code39" height=20 scale=2 fit="box"}}}
+    <span class="barcode__text">{{barcode.displayText}}</span>
+  </div>
+</div>

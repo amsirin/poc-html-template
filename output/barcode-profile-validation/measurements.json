@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-03",
+  "dpi": 150,
+  "expected_pt": {
+    "width": 62.2,
+    "height": 25
+  },
+  "tolerance_pixels": 2,
+  "barcode_roi_pt": [
+    210,
+    155,
+    340,
+    210
+  ],
+  "measurements": [
+    {
+      "name": "pos-zlbnchg",
+      "bar_ink_pixels": {
+        "width": 130,
+        "height": 52
+      },
+      "bar_ink_pt": {
+        "width": 62.4,
+        "height": 24.959999999999997
+      },
+      "changed_pixels": 230,
+      "changed_outside_barcode_region": 0
+    },
+    {
+      "name": "dis-zlagchg",
+      "bar_ink_pixels": {
+        "width": 130,
+        "height": 53
+      },
+      "bar_ink_pt": {
+        "width": 62.4,
+        "height": 25.439999999999998
+      },
+      "changed_pixels": 8090,
+      "changed_outside_barcode_region": 0
+    },
+    {
+      "name": "ipplt-single-reference",
+      "bar_ink_pixels": {
+        "width": 130,
+        "height": 52
+      },
+      "bar_ink_pt": {
+        "width": 62.4,
+        "height": 24.959999999999997
+      },
+      "changed_pixels": 7759,
+      "changed_outside_barcode_region": 0
+    },
+    {
+      "name": "ipplt-loan-reference",
+      "bar_ink_pixels": {
+        "width": 130,
+        "height": 52
+      },
+      "bar_ink_pt": {
+        "width": 62.4,
+        "height": 24.959999999999997
+      },
+      "changed_pixels": 7796,
+      "changed_outside_barcode_region": 0
+    }
+  ]
+}

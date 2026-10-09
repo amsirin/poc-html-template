@@ -1,0 +1,59 @@
+{
+  "subject": "แจ้งเลื่อนการพิจารณาใบคำขอเอาประกันชีวิต",
+  "company": {
+    "name": "บริษัท เอฟดับบลิวดี ประกันชีวิต จำกัด (มหาชน)",
+    "headerImagePath": "../assets/pos-zlbnchg/header-banner.png"
+  },
+  "printDate": "2 ตุลาคม 2569",
+  "recipient": {
+    "title": "",
+    "postcode": "",
+    "name": "คุณ ผู้รับตัวอย่าง",
+    "addressLines": [
+      "123 ถนนตัวอย่าง",
+      "กรุงเทพมหานคร 10000"
+    ]
+  },
+  "barcode": {
+    "value": "IPPLT-DEMO-03",
+    "displayText": "*IPPLT-DEMO-03*"
+  },
+  "flags": {
+    "showAgent": false,
+    "showSingleCode": false,
+    "showMultipleCode": false,
+    "showLoan": false,
+    "showSinglePayment": false,
+    "showMultiplePayments": false,
+    "showPaymentSpacing": false
+  },
+  "singleCode": "NB_ILD",
+  "multipleCode": "",
+  "application": {
+    "number": "APP-DEMO-001",
+    "insured": "คุณ ผู้เอาประกันตัวอย่าง",
+    "plan": "แบบประกันสำหรับการทดสอบ",
+    "loanReference": ""
+  },
+  "payment": {
+    "amount": "0.00",
+    "detail": "",
+    "rows": []
+  },
+  "agent": {
+    "name": "",
+    "branchCode": "TEST01",
+    "branchName": "สำนักงานตัวอย่าง"
+  },
+  "phoneNumber": "1351",
+  "footerReference": "IPPLT-DEMO-03",
+  "ruleTrace": {
+    "showAgent": false,
+    "showSingleCode": false,
+    "showMultipleCode": false,
+    "showLoan": false,
+    "showSinglePayment": false,
+    "showMultiplePayments": false,
+    "showPaymentSpacing": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "engine": "pdfreactor",
+  "pdfreactorUrl": "http://localhost:9423",
+  "htmlPath": "/Users/amber/Documents/CCM/poc-html-template/output/pos-zlbnchg.html",
+  "pdfPath": "/Users/amber/Documents/CCM/poc-html-template/baselines/pos-zlbnchg.pdf",
+  "dpi": 150,
+  "overallPageSimilarity": 97.46,
+  "overallContentSimilarity": 17.39,
+  "overallGridSimilarity": 99.39,
+  "pageCount": 1,
+  "results": [
+    {
+      "page": 1,
+      "pageSimilarity": 97.46,
+      "contentSimilarity": 17.39,
+      "gridSimilarity": 99.39,
+      "numDiffPixels": 55261,
+      "totalPixels": 2176200,
+      "inkBaseline": 97989,
+      "inkRendered": 101557,
+      "inkUnion": 142255,
+      "diffInInkUnion": 117517,
+      "width": 1240,
+      "height": 1755,
+      "baseline": "baseline-1.png",
+      "rendered": "rendered-1.png",
+      "diff": "diff-01.png"
+    }
+  ]
+}

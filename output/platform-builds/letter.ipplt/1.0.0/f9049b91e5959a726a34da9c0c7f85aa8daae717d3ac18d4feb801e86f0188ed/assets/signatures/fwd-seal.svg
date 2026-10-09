@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <circle cx="50" cy="50" r="46" stroke="#E87722" stroke-width="2" fill="none"/>
+  <circle cx="50" cy="50" r="38" stroke="#E87722" stroke-width="1" fill="none"/>
+  <path id="topArc" d="M 12 50 A 38 38 0 0 1 88 50" fill="none"/>
+  <path id="bottomArc" d="M 88 50 A 38 38 0 0 1 12 50" fill="none"/>
+  <text font-family="Arial" font-size="7" fill="#E87722">
+    <textPath href="#topArc" startOffset="50%" text-anchor="middle">
+      บริษัท เอฟดับบลิวดี ประกันชีวิต จำกัด (มหาชน)
+    </textPath>
+  </text>
+  <text font-family="Arial" font-size="6" fill="#E87722">
+    <textPath href="#bottomArc" startOffset="50%" text-anchor="middle">
+      FWD Life Insurance Public Company Limited
+    </textPath>
+  </text>
+  <text x="50" y="55" text-anchor="middle" font-family="Arial" font-weight="700" font-size="18" fill="#E87722">FWD</text>
+</svg>

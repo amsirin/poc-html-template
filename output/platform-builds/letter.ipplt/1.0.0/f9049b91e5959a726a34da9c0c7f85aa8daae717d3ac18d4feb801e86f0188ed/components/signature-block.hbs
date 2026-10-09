@@ -1,0 +1,19 @@
+{{! Three-column signature block: signer left, FWD seal center, witness right.
+    Used by any letter that requires signed authorisation.
+    Data expected: signatures.{signer, seal, witness}
+      where signer/witness: { imagePath, name, position } and seal: { imagePath } }}
+<section class="signature-block">
+  <div class="signature signature--signer">
+    <img class="signature__image" src="{{signatures.signer.imagePath}}" alt="ลายเซ็นผู้รับมอบอำนาจ" />
+    <p class="signature__name">({{signatures.signer.name}})</p>
+    <p class="signature__position">{{signatures.signer.position}}</p>
+  </div>
+  <div class="signature signature--seal">
+    <img class="signature__image signature__image--seal" src="{{signatures.seal.imagePath}}" alt="ตราประทับ FWD" />
+  </div>
+  <div class="signature signature--witness">
+    <img class="signature__image" src="{{signatures.witness.imagePath}}" alt="ลายเซ็นพยาน" />
+    <p class="signature__name">({{signatures.witness.name}})</p>
+    <p class="signature__position">{{signatures.witness.position}}</p>
+  </div>
+</section>

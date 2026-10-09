@@ -1,0 +1,15 @@
+{
+  "origin": "new",
+  "specificationExpectedOutputs": false,
+  "rulesBusinessApproved": false,
+  "visualApproved": false,
+  "operationalApproved": false,
+  "requiredFixtureCases": [
+    "normal",
+    "boundary",
+    "overflow"
+  ],
+  "openIssues": [
+    "Define domain contract, content, rules, profile and expected outputs."
+  ]
+}

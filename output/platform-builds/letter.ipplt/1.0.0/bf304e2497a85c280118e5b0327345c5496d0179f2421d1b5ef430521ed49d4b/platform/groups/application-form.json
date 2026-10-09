@@ -1,0 +1,16 @@
+{
+  "schemaVersion": "ccm.group/1.0",
+  "id": "application-form",
+  "title": "Application Form",
+  "mode": "compose",
+  "allowedProfiles": [],
+  "authoring": "developer-git-pr",
+  "requiredCapabilities": [
+    "field grids",
+    "checkboxes",
+    "conditional declarations",
+    "signature regions",
+    "overflow policy"
+  ],
+  "implementation": "scaffold-only; profiles and runtime capabilities need implementation and source validation"
+}
